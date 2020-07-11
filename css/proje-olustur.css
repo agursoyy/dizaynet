@@ -1,0 +1,322 @@
+
+body {
+	font-family: 'sofiapro-light' !important;
+}
+
+
+.ic-mimari {
+	display: none;
+}
+
+
+input[type="text"]:focus {
+	border-bottom: 2px solid #D19E2C !important;
+	transition: .3s;
+}
+
+.yeni-resim {
+	padding: 12px 25px;
+	background-color: #D19E2C;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'nunito-bold';
+	border-radius: 22px;
+}
+
+#editor {
+	height: 120px;
+}
+
+
+.filters {
+	margin: 0;
+}
+
+.el-resim {
+	display: flex;
+	border-bottom: 1px solid #dbdbdb;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.el-resim input[type="file"] {
+	height: 100% !important;
+}
+.resim-filtreler {
+
+}
+
+
+.alan-select {
+	display: none;
+}
+
+
+
+
+/* custom file input */
+
+
+.custom-file-input {
+	color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+.custom-file-input::before {
+	content: 'Bir Resim Seçin';
+	width: 100%;
+	height: 200px;
+	border: none;
+	background-color: #f9f9f9;
+	color: black;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: pre-wrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+}
+.custom-file-input:hover::before {
+	border-color: black;
+}
+.custom-file-input:active {
+	outline: 0;
+}
+.custom-file-input:active::before {
+	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+.input-img {
+	position: relative;
+	width: 250px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	padding: 0 !important;
+	overflow: hidden;
+	border: 1px solid #8d8d8d;
+	border-style: dashed;
+}
+
+.input-img img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 95%;
+	max-height: 100%;
+}
+
+
+
+
+
+
+
+select.tur-select {
+	display: block;
+	font-size: 16px;
+	font-family: 'FontAwesome', 'sofiapro-light';
+	font-weight: bold;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+}
+
+
+.alan-select {
+	font-size: 16px;
+	font-family: 'FontAwesome', 'sofiapro-light';
+	font-weight: bold;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+}
+
+
+
+
+.stil-select {
+	display: block;
+	font-size: 16px;
+	font-family: 'FontAwesome', 'sofiapro-light';
+	font-weight: bold;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+}
+
+
+
+.malzeme-select {
+	display: block;
+	font-size: 16px;
+	font-family: 'FontAwesome', 'sofiapro-light';
+	font-weight: bold;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+}
+
+
+.foto-sil {
+	position: absolute;
+	bottom: 2px;
+	left: 2px;
+	z-index: 1000;
+	cursor: pointer;
+	color: #D19E2C;
+	font-family: 'sofiapro-light';
+	font-weight: bold;
+	border-radius: 3px;
+	padding: 2px 5px;
+	background-color: rgba(255,255,255,.3);
+	display: none;
+}
+/*
+.foto-sil > span {
+	color: #000 !important;
+}
+*/
+
+
+.alan-select-active-1,
+.alan-select-active-2,
+.alan-select-active-3,
+.alan-select-active-4,
+.alan-select-active-5,
+.alan-select-active-6,
+.alan-select-active-7,
+.alan-select-active-8,
+.alan-select-active-9,
+.alan-select-active-10,
+.alan-select-active-11,
+.alan-select-active-12,
+.alan-select-active-13,
+.alan-select-active-14,
+.alan-select-active-15,
+.alan-select-active-16,
+.alan-select-active-17,
+.alan-select-active-18,
+.alan-select-active-19,
+.alan-select-active-20,
+.alan-select-active-21,
+.alan-select-active-22,
+.alan-select-active-23,
+.alan-select-active-24,
+.alan-select-active-25,
+.alan-select-active-26,
+.alan-select-active-27,
+.alan-select-active-28,
+.alan-select-active-29,
+.alan-select-active-30,
+.alan-select-active-31,
+.alan-select-active-32,
+.alan-select-active-33,
+.alan-select-active-34,
+.alan-select-active-35,
+.alan-select-active-36,
+.alan-select-active-37,
+.alan-select-active-38,
+.alan-select-active-39,
+.alan-select-active-40,
+.alan-select-active-41,
+.alan-select-active-42,
+.alan-select-active-43,
+.alan-select-active-44,
+.alan-select-active-45,
+.alan-select-active-46,
+.alan-select-active-47,
+.alan-select-active-48,
+.alan-select-active-49,
+.alan-select-active-50,
+.alan-select-active-51,
+.alan-select-active-52,
+.alan-select-active-53,
+.alan-select-active-54,
+.alan-select-active-55,
+.alan-select-active-56,
+.alan-select-active-57,
+.alan-select-active-58,
+.alan-select-active-59,
+.alan-select-active-60,
+.alan-select-active-61,
+.alan-select-active-62,
+.alan-select-active-63,
+.alan-select-active-64,
+.alan-select-active-65,
+.alan-select-active-66,
+.alan-select-active-67,
+.alan-select-active-68,
+.alan-select-active-69,
+.alan-select-active-70,
+.alan-select-active-71,
+.alan-select-active-72,
+.alan-select-active-73,
+.alan-select-active-74,
+.alan-select-active-75,
+.alan-select-active-76,
+.alan-select-active-77,
+.alan-select-active-78,
+.alan-select-active-79,
+.alan-select-active-80,
+.alan-select-active-81,
+.alan-select-active-82,
+.alan-select-active-83,
+.alan-select-active-84,
+.alan-select-active-85,
+.alan-select-active-86,
+.alan-select-active-87,
+.alan-select-active-88,
+.alan-select-active-89,
+.alan-select-active-90 {
+	display: block;
+}

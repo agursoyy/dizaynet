@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dogan Hazar</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/evsahibi.css" />
+  <link rel="stylesheet" type="text/css" href="css/evsahibi-begeniler.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/profesyonel-ol.css" />
+  <link rel="stylesheet" type="text/css" href="css/mobile-bottom-menu.css">
+  <link rel="stylesheet" type="text/css" href="css/map.css">
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css"></script>
+  <script type="text/javascript" src="js/croppie.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/croppie.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/searchbox.css">
+  <script src="./js/searchbox.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div onclick="openMobileMenu()" class="hamburger-menu d-none">
+      <button><i class="fa fa-bars"></i></button>
+    </div>
+    <div class="logo">
+      <h1><a href="index.html">dizay<span>n</span>et</a></h1>
+    </div>
+
+    <div class="mobile-search">
+      <button class="btn btn-link search-btn"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="search-bar">
+      <button><i class="fa fa-search"></i></button>
+      <input type="text" name="" class="input-text" placeholder="Eviniz için tasarım fikirleri bulun...">
+      <div class="search-list">
+        <div class="item">
+          <img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+          <a href="#ahah" class="item-text">
+            Abs..
+          </a>
+        </div>
+        <div class="item">
+          <img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+          <a href="#ahah" class="item-text">
+            abc
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="search-box">
+      <div class="search-box-input">
+        <i class="fa fa-search  search-icon-checked"></i>
+        <input type="text" name="input-text-mobile" class="input-text-mobile" placeholder="Ara..." />
+        <button class="close-btn btn btn-link" onclick="">
+          <img class="icon" src="./icons/close.svg" alt="search-icon" />
+        </button>
+      </div>
+      <div class="search-list">
+        <div class="item">
+          <img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+          <a class="item-link" href="#">
+            Abs..
+          </a>
+        </div>
+        <div class="item">
+          <img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+          <a class="item-link" href="#">
+            Abs..
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <a href="tasarim.html">Dizayn</a>
+      <a href="profesyoneller.html">Profesyoneller</a>
+      <a href="yarisma.html">Yarışmalar</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <div class="login-btn">
+      <a onclick="openLogin()">Giriş Yap</a>
+    </div>
+
+  </header>
+
+  <section class="hero-image">
+    <img src="" id="uploaded_image" />
+    <img class="banner d-none" src="./images/loginbanner.jpg" />
+    <div class="upload-banner-img">
+      <input type="file" class="upload-banner" name="upload_banner" id="upload_banner" accept="image/*"
+        style="z-index: 999;">
+      <label for="upload_banner" class="upload-banner-icon"> <img src="./icons/ionic-ios-share.svg"
+          alt="upload" /></label>
+    </div>
+    <div class="image-overlay">
+      <i class="fa fa-download"></i>
+      <input type="file" class="custom-input" name="upload_image" id="upload_image" accept="image/*"
+        style="z-index: 999;" />
+      <h3>Başlık Görüntüsü Ekle</h3>
+      <p>Optimum boyutlar 3200 x 410px</p>
+    </div>
+  </section>
+
+  <section class="profile-container">
+    <div class="profile-card">
+      <div class="img-box">
+        <img src="images/person1.jpg" id="uploaded_image2" />
+        <span><i class="fa fa-plus"></i></span>
+        <input type="file" class="custom-input custom-input2" name="upload_image2" id="upload_image2"
+          accept="image/*" />
+      </div>
+      <div class="mobile-name">
+        Doğan Hazar
+      </div>
+
+      <span class="title">Dogan Hazar</span>
+
+      <div class="mobile-profile-buttons d-none">
+        <a class="item start-comp" href="">
+          <div class="icon-container">
+            <img src="./icons/house.svg" />
+          </div>
+          <span>Yarışma Başlat</span>
+        </a>
+        <a class="item inspiration" href="">
+          <div class="icon-container">
+            <img src="./icons/picture.svg" />
+          </div>
+          <span>İlham Al</span>
+        </a>
+        <a class="item professional" href="">
+          <div class="icon-container">
+            <img src="./icons/architect.svg" />
+          </div>
+          <span>Profesyoneller</span>
+        </a>
+      </div>
+
+      <div class="row profile-card-content">
+        <div class="content-card">
+          <div class="circle-container">
+            <div class="img">
+              <img src="./icons/house.svg" />
+            </div>
+          </div>
+          <div class="text-container">
+            <a href="#">Yarışma Başlat</a>
+            <p class="explanation">
+              Mekanlarınız yarışma ile baştan
+              tasarlayın. Bir çok projeye kolayca
+              ulaşın
+            </p>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="circle-container">
+            <div class="img">
+              <img src="./icons/picture.svg" />
+            </div>
+          </div>
+          <div class="text-container">
+            <a href="#">İlham Al</a>
+            <p class="explanation">
+              Mekanlarınız yarışma ile baştan
+              tasarlayın. Bir çok projeye kolayca
+              ulaşın
+            </p>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="circle-container">
+            <div class="img">
+              <img src="./icons/architect.svg" />
+            </div>
+          </div>
+          <div class="text-container">
+            <a href="#">Profesyoneller</a>
+            <p class="explanation">
+              Alanında uzman tasarımcılar
+              ile iletişime geçin ve hayalinizdeki
+              eve sahip olun.
+            </p>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="circle-container">
+            <div class="img">
+              <img src="./icons/reading.svg" />
+            </div>
+          </div>
+          <div class="text-container">
+            <a href="#">Yazılar</a>
+            <p class="explanation">
+              Alanında uzman tasarımcılar
+              ile iletişime geçin ve hayalinizdeki
+              eve sahip olun.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="profile-content">
+      <div class="profile-name">
+        <div class="title">
+        </div>
+        <a class="premium-button" href="profil.html#!">PREMIUM'A GEÇ</a>
+      </div>
+
+      <div class="profile-tabs">
+        <a href="evsahibi.html">Pano</a>
+        <a href="evsahibi-begeniler.html" class="active-profile-tab">Beğeniler</a>
+      </div>
+
+      <div class="card-container-tasarim">
+        <div class="row ml-2 mr-2 mr-sm-0 ml-sm-0">
+          <div class="col-6 col-lg-4 col-xl-3">
+            <div class="card-tasarim">
+              <div class="card-img-tasarim">
+                <div class="card-img-overlay-tasarim">
+                  <div class="overlay-left">
+                    <p>Mutfak Renevasyon Projesi</p>
+                    <span>Doğan Hazar <div class="begeni-span"><i class="fa fa-thumbs-up"></i> 280</div></span>
+                  </div>
+                </div>
+                <img src="images/1.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <div class="card-tasarim">
+              <div class="card-img-tasarim">
+                <div class="card-img-overlay-tasarim">
+                  <div class="overlay-left">
+                    <p>Mutfak Renevasyon Projesi</p>
+                    <span>Doğan Hazar <div class="begeni-span"><i class="fa fa-thumbs-up"></i> 280</div></span>
+                  </div>
+                </div>
+                <img src="images/2.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <div class="card-tasarim">
+              <div class="card-img-tasarim">
+                <div class="card-img-overlay-tasarim">
+                  <div class="overlay-left">
+                    <p>Mutfak Renevasyon Projesi</p>
+                    <span>Doğan Hazar <div class="begeni-span"><i class="fa fa-thumbs-up"></i> 280</div></span>
+                  </div>
+                </div>
+                <img src="images/3.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <div class="card-tasarim">
+              <div class="card-img-tasarim">
+                <div class="card-img-overlay-tasarim">
+                  <div class="overlay-left">
+                    <p>Mutfak Renevasyon Projesi</p>
+                    <span>Doğan Hazar <div class="begeni-span"><i class="fa fa-thumbs-up"></i> 280</div></span>
+                  </div>
+                </div>
+                <img src="images/4.jpg">
+              </div>
+            </div>
+
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <div class="card-tasarim">
+              <div class="card-img-tasarim">
+                <div class="card-img-overlay-tasarim">
+                  <div class="overlay-left">
+                    <p>Mutfak Renevasyon Projesi</p>
+                    <span>Doğan Hazar <div class="begeni-span"><i class="fa fa-thumbs-up"></i> 280</div></span>
+                  </div>
+                </div>
+                <img src="images/55.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <div class="card-tasarim">
+              <div class="card-img-tasarim">
+                <div class="card-img-overlay-tasarim">
+                  <div class="overlay-left">
+                    <p>Mutfak Renevasyon Projesi</p>
+                    <span>Doğan Hazar <div class="begeni-span"><i class="fa fa-thumbs-up"></i> 280</div></span>
+                  </div>
+                </div>
+                <img src="images/66.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- kapak foto crop modal -->
+  <div id="uploadimageModal" class="modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content banner-crop">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <h4 class="modal-title">Kapak Fotoğrafınız</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8 text-center">
+              <div id="image_demo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            İptal
+          </button>
+          <button class="btn btn-success crop_image">Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- profil foto crop modal -->
+  <div id="uploadimageModal2" class="modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content profile-crop">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <h4 class="modal-title">Profil Fotoğrafınız</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8 text-center">
+              <div id="image_demo2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            İptal
+          </button>
+          <button class="btn btn-success crop_image2">Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="id03" class="mobile-search-modal">
+    <form class="search-modal">
+      <input type="text" name="" placeholder="Tasarım fikir bulun.." />
+      <button><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <div class="mobile-cont-filter" id="mobile-cont-filter"></div>
+
+  <div class="mobile-bottom-menu">
+    <ul>
+      <li><a href="tasarim.html"><img src="images/dizayn-ico.svg" alt=""></a></li>
+      <li><a href="profesyoneller.html"><img src="images/profesyoneller-ico.svg" alt=""></a></li>
+      <li><a href="blog.html" class="active-bottom-link"><img src="images/blog-ico.svg" alt=""></a></li>
+      <li><a href="yarisma.html"><img src="images/yarisma-ico.svg" alt=""></a></li>
+      <li><a href="profil.html"><i class="fa fa-user-circle"></i></a></li>
+    </ul>
+  </div>
+
+
+
+  <!-- giriş yap formu -->
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="" method="post">
+      <div class="container">
+        <h3>Hoşgeldiniz</h3>
+        <p>Devam etmek için lütfen giriş yapın.</p>
+        <input type="mail" name="" placeholder="E-posta" />
+        <input type="password" name="" placeholder="Şifre" />
+        <a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+        <p class="or">Veya</p>
+
+        <a class="facebook-login" href="profil.html#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook
+          ile devam et</a>
+        <a class="google-login" href="profil.html#!"><img src="images/google-icon.png" />&nbsp;&nbsp;&nbsp;Google ile
+          devam et</a>
+        <button type="submit">Giriş Yap</button>
+
+        <p class="dont-have-acc">
+          Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a>
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <!-- kayıt ol formu -->
+  <div id="id02" class="modal2">
+    <form class="modal-content animate modal-kayit" action="" method="post">
+      <div class="container">
+        <h3>Kayıt Ol</h3>
+        <p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+        <div class="register-radios">
+          <label class="container-check">Tasarımcıyım
+            <input type="checkbox" />
+            <span class="checkmark-check"></span>
+          </label>
+          <label class="container-check">Tasarımcı Arıyorum
+            <input type="checkbox" />
+            <span class="checkmark-check"></span>
+          </label>
+        </div>
+        <input type="mail" name="" placeholder="E-posta" />
+        <input type="password" name="" placeholder="Şifre" />
+        <label class="login-container">
+          Haber bülteni ve yenilikler ile ilgili mail almak istiyorum.
+          <input type="checkbox" checked="checked" />
+          <span class="login-checkmark"></span>
+        </label>
+        <label class="login-container">
+          Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+          <input type="checkbox" />
+          <span class="login-checkmark"></span>
+        </label>
+
+        <p class="or">Veya</p>
+
+        <a class="facebook-login" href="profil.html#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook
+          ile devam et</a>
+        <a class="google-login" href="profil.html#!"><img src="images/google-icon.png" />&nbsp;&nbsp;&nbsp;Google ile
+          devam et</a>
+        <button type="submit">Kayıt Ol</button>
+
+        <p class="dont-have-acc">
+          Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a>
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $image_crop = $("#image_demo").croppie({
+        enableExif: true,
+        viewport: {
+          width: innerWidth,
+          height: 410,
+          type: "square", //circle
+        },
+        boundary: {
+          width: innerWidth,
+          height: 260,
+        },
+      });
+
+      $("#upload_image").on("change", function () {
+        var reader = new FileReader();
+        reader.onload = function (event) {
+          $image_crop
+            .croppie("bind", {
+              url: event.target.result,
+            })
+            .then(function () {
+              console.log("jQuery bind complete");
+            });
+        };
+        reader.readAsDataURL(this.files[0]);
+        $("#uploadimageModal").modal("show");
+      });
+
+      $(".crop_image").click(function (event) {
+        $image_crop
+          .croppie("result", {
+            type: "canvas",
+            size: "viewport",
+          })
+          .then(function (response) {
+            $.ajax({
+              url: "", // upload.php dosyası gelecek
+              type: "POST",
+              data: { image: response },
+              success: function (data) {
+                console.log("Başarılı!");
+                //başarılı olduğunda ajax işlemleri burada yapılacak
+              },
+            });
+            $("#uploadimageModal").modal("hide");
+            $("#uploaded_image").attr("src", response); // resim kesilip yüklendkten sonra önizlemede gösteriyorum.
+            // resim yükleme butonlarını gizliyorum
+            $(".image-overlay").children().hide();
+          });
+      });
+
+      if ($("#uploaded_image").attr("src") === "") {
+        $(".image-overlay").children().show();
+      } else {
+        $(".image-overlay").children().hide();
+      }
+
+      if (innerWidth < 1200) {
+        $(".image-overlay").children().hide();
+      }
+    });
+  </script>
+
+  <!-- profil foto crop edit -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $image_crop2 = $("#image_demo2").croppie({
+        enableExif: true,
+        viewport: {
+          width: 200,
+          height: 200,
+          type: "circle", //circle
+        },
+        boundary: {
+          width: 380,
+          height: 380,
+        },
+      });
+
+      $("#upload_image2").on("change", function () {
+        var reader = new FileReader();
+        reader.onload = function (event) {
+          $image_crop2
+            .croppie("bind", {
+              url: event.target.result,
+            })
+            .then(function () {
+              console.log("jQuery bind complete");
+            });
+        };
+        reader.readAsDataURL(this.files[0]);
+        $("#uploadimageModal2").modal("show");
+      });
+
+      $(".crop_image2").click(function (event) {
+        $image_crop2
+          .croppie("result", {
+            type: "canvas",
+            size: "viewport",
+          })
+          .then(function (response) {
+            $.ajax({
+              url: "", // upload.php dosyası gelecek
+              type: "POST",
+              data: { image: response },
+              success: function (data) {
+                console.log("Başarılı!");
+                //başarılı olduğunda ajax işlemleri burada yapılacak
+              },
+            });
+            $("#uploadimageModal2").modal("hide");
+            $("#uploaded_image2").attr("src", response); // resim kesilip yüklendkten sonra önizlemede gösteriyorum.
+            // resim yükleme butonlarını gizliyorum
+            //$(".image-overlay2").children().hide();
+          });
+      });
+    });
+  </script>
+
+  <script>
+    // YORUM PROFIL YILDIZLAMA
+    $(document).ready(function () {
+      /* 1. Visualizing things on Hover - See next part for action on click */
+      $("#stars li")
+        .on("mouseover", function () {
+          var onStar = parseInt($(this).data("value"), 10); // The star currently mouse on
+
+          // Now highlight all the stars that's not after the current hovered star
+          $(this)
+            .parent()
+            .children("li.star")
+            .each(function (e) {
+              if (e < onStar) {
+                $(this).addClass("hover");
+              } else {
+                $(this).removeClass("hover");
+              }
+            });
+        })
+        .on("mouseout", function () {
+          $(this)
+            .parent()
+            .children("li.star")
+            .each(function (e) {
+              $(this).removeClass("hover");
+            });
+        });
+
+      /* 2. Action to perform on click */
+      $("#stars li").on("click", function () {
+        var onStar = parseInt($(this).data("value"), 10); // The star currently selected
+        var stars = $(this).parent().children("li.star");
+
+        for (i = 0; i < stars.length; i++) {
+          $(stars[i]).removeClass("selected");
+        }
+
+        for (i = 0; i < onStar; i++) {
+          $(stars[i]).addClass("selected");
+        }
+
+        // JUST RESPONSE (Nost needed)
+        var ratingValue = parseInt(
+          $("#stars li.selected").last().data("value"),
+          10
+        );
+
+        // verilen puanı star rate inputuna value olarak veriyorum
+        $("#star-rate-input").val(ratingValue);
+      });
+    });
+
+
+    var map;
+
+    function initMap() {
+
+      // Create map
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 30.266666, lng: -97.733330 },
+        zoom: 8
+      });
+
+      // Reset the value of the search box
+      document.getElementById('search').value = 'izmir';
+
+      var input = document.getElementById('search');
+
+      // Create new searchbox constructor
+      var searchName = new google.maps.places.SearchBox(input);
+
+      // Set search to stay within bounds first
+      map.addListener('bounds_changed', function () {
+        searchName.setBounds(map.getBounds());
+      })
+
+      // Array to hold search options
+      var markers = [];
+
+      // When user selects prediction from list
+      searchName.addListener('places_changed', function () {
+        console.log('AAHHA');
+        // Var to get places
+        var places = searchName.getPlaces();
+        console.log(places);
+
+        // If no places then just return (do nothing)
+        if (places.length === 0) {
+          return;
+        }
+
+        // Clear previous markers
+        markers.forEach(function (m) { m.setMap(null); });
+
+        // Reset markers array
+        markers = [];
+
+        // bounds object
+        var bounds = new google.maps.LatLngBounds();
+
+        places.forEach(function (p) {
+          // If no data then just return (do nothing)
+          if (!p.geometry) {
+            return;
+          }
+
+          // push marker with data
+          markers.push(new google.maps.Marker({
+            map: map,
+            title: p.title,
+            position: p.geometry.location
+          }));
+          if (p.geometry.viewport) {
+            bounds.union(p.geometry.viewport);
+          } else {
+            bounds.extend(p.geometry.location);
+          }
+        });
+        map.fitBounds(bounds);
+      });
+    }
+
+    initMap();
+  </script>
+
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

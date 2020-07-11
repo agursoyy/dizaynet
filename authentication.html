@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dizaynet</title>
+  <meta charset="utf-8">
+  <meta name="csrf-token" content="WkuURkyBdEWA0uOa1oM9wa9VennIz61ph7v1p6GO">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/tasarim.css">
+  <link rel="stylesheet" type="text/css" href="./css/mobile-login.css">
+
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/23a4359d6e.js"></script>
+
+</head>
+
+<body>
+  <div id="mobile-login" class="mobile-login-container d-lg-none">
+    <a class="btn btn-link close-link" onclick="goBack()"><img src="./icons/auth-close.svg" alt="close" /></a>
+    <div class="container">
+      <div class="logo">
+        <img src="./icons/logo-light.svg" class="logo" alt="logo" />
+      </div>
+      <div class="page-text">
+        <div>İlham Al</div>
+        <div>Profesyonel Bul</div>
+        <div>Evini Tasarla</div>
+      </div>
+      <div class="login">
+        <div class="e-posta-login">
+          <button class="btn btn-block btn-e-posta"><i class="fa fa-envelope mr-3"></i>E-Posta ile devam et</button>
+        </div>
+        <div class="hr">
+          <span>veya</span>
+        </div>
+        <div class="btn-groups d-flex">
+          <div class="facebook-login flex-1 pr-1">
+            <button class="btn btn-block btn-facebook "><img src="./icons/facebook.svg" class="icon">Facebook</button>
+          </div>
+          <div class="google-login flex-1 pl-1">
+            <button class="btn btn-block btn-google "><img src="./icons/google.svg" class="icon">Google</button>
+          </div>
+        </div>
+        <p class="or-login-exp">
+          ile hızlı üye olun
+        </p>
+        <p class="login-rights-exp">
+          Üye olarak hüküm , koşullar ve gizlilik politikasını kabul etmiş olursunuz.
+        </p>
+        <div class="signup">
+          <button class="btn btn btn-block btn-dark">Kayıt Ol</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    const goBack = () => {
+      console.log('goBack');
+    }
+
+
+    $(document).ready(() => {
+      // when dom is ready.
+
+    })
+  </script>
+</body>
+
+
+</html>

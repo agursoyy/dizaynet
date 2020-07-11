@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dogan Hazar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/hesap-ayarlari.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+
+	<header>
+		<div onclick="openMobileMenu()" class="hamburger-menu">
+			<button><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="logo">
+			<h1><a href="index.html">dizay<span>n</span>et</a></h1>
+		</div>
+
+		<div onclick="openSearch()" class="mobile-search">
+			<button><i class="fa fa-search"></i></button>
+		</div>
+		<div class="search-bar">
+			<button><i class="fa fa-search"></i></button>
+			<input type="text" name="" placeholder="Eviniz için tasarım fikirleri bulun...">
+		</div>
+		<nav>
+			<a href="tasarim.html">Dizayn</a>
+			<a href="profesyoneller.html">Profesyoneller</a>
+			<a href="yarisma.html">Yarışmalar</a>
+			<a href="blog.html">Blog</a>
+		</nav>
+		<div class="login-btn">
+			<a onclick="openLogin()">Giriş Yap</a>
+		</div>
+
+	</header>
+
+
+
+
+
+
+	<section class="forget-pass">
+		<form action="" method="POST">
+			<div class="success-alert">Şifre sıfırlama e-postası gönderildi.</div><!-- başarılı olduğunda gösterilecek -->
+			<h1>Hesap Ayarlarım</h1>
+			<p>Hesabınızla bağlantılı e-posta adresini, şifrenizi ve 
+			diğer ayarlarınızı buradan düzenleyebilirisiniz.</p>
+			<label>
+				<span>Ad</span>
+				<input type="text" name="">
+			</label>
+			<label>
+				<span>Soyad</span>
+				<input type="text" name="">
+			</label>
+			<label>
+				<span>E-posta</span>
+				<input type="mail" name="">
+			</label>
+			<label>
+				<span>Telefon Numarası</span>
+				<input type="tel" name="" placeholder="5xx xxx xx xx">
+			</label>
+			<label>
+				<span>Cinsiyet</span>
+				<div class="select-box">
+					<select class="first" id="proje-tur">
+						<option></option>
+						<option>Erkek</option>
+						<option>Kadın</option>
+						<option>Belirtmek istemiyorum</option>
+					</select>
+					<div class="down">
+						<i class="fa fa-sort-down"></i>
+					</div>
+				</div>
+			</label>
+
+			<label>
+				<span>Doğum Tarihi</span>
+				<input type="text" name="birthday" value=""/>
+			</label>
+
+			<label>
+				<span>Mevcut Şifre</span>
+				<input type="password" name="">
+			</label>
+
+			<label>
+				<span>Yeni Şifre</span>
+				<input type="password" name="">
+			</label>
+
+			<label>
+				<span>Yeni Şifre Tekrar</span>
+				<input type="password" name="">
+			</label>
+			
+			
+
+
+
+
+			<div class="form-buttons">
+				<a href="#">İptal Et</a>
+				<button type="submit">Kaydet</button>
+			</div>
+		</form>
+	</section>
+
+
+
+
+
+
+
+
+	<footer>
+		<div class="footer-top">
+			<div class="top-left">
+				<h1>dizay<span>n</span>et</h1>
+				<p>
+					Mekanlarınızı baştan tasarlamanın en yeni yolu.
+				</p>
+				<div class="app-badges">
+					<a href="#!" class="apple">
+						<img src="images/appstore.svg" width="120px" height="38px">
+					</a>
+					<a href="#!" class="google-play">
+						<img src="images/googleplay.png" width="120px" height="38px">
+					</a>
+				</div>
+
+			</div>
+
+			<div class="links">
+				<div class="kesfet">
+					<h2>Keşfet</h2>
+					<a href="index.html">Anasayfa</a>
+					<a href="tasarim.html">Dizayn</a>
+					<a href="yarisma.html">Yarışmalar</a>
+					<a href="blog.html">Blog</a>
+					<a href="profesyoneller.html">Profesyoneller</a>
+				</div>
+
+
+				<div class="bilgi">
+					<h2>Bilgi</h2>
+					<a href="#!">Hakkımızda</a>
+					<a href="#!">Profesyonel Olun</a>
+					<a href="#!">Premium Üyelik</a>
+					<a href="#!">İletişim</a>
+				</div>
+			</div>
+
+			<div class="footer-form">
+				<h3>Bize Ulaşın</h3>
+				<p>Email: support@domain.com <br>
+					Phone: 1 (00) 832 2342
+				</p>
+				<div class="icons">
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
+					<a href="#"><i class="fab fa-behance"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></sa>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer-bottom">
+				<p>© 2020 DİZAYNET. Tüm hakları saklıdır.</p>
+				<div class="bottom-links">
+					<a href="#">Üyelik Sözleşmesi</a>
+					<a href="#">Şartlar ve Koşullar</a>
+					<a href="#">Sıkça Sorulan Sorular</a>
+				</div>
+			</div>
+		</footer>
+
+
+		<div id="id03" class="mobile-search-modal">
+			<form class="search-modal">
+				<input type="text" name="" placeholder="Tasarım fikir bulun..">
+				<button><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+
+
+
+		<div class="mobile-cont-filter" id="mobile-cont-filter">
+
+		</div>
+
+		<div class="mobile-menu-cont" id="mobile-menu-cont">
+			<div class="mobil-login">
+				<div class="mobil-login-top">
+					<a onclick="openLogin()">Giriş Yap</a>
+					<a href="#">Profesyonel Ol</a>
+				</div>
+				<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
+			</div>
+
+			<div class="mobile-kesfedin" id="mobile-kesfedin">
+				<p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
+				<div class="kesfedin-links">
+					<a href="#"> Mimari</a>
+					<a href="#">İç Mimari</a>
+					<a href="#">Peyzaj</a>
+					<a href="#">Endüstriyel Tasarım</a>
+				</div>
+			</div>
+
+			<div class="mobile-menu-nav">
+				<a href="tasarim.html"> Dizayn</a>
+				<a href="profesyoneller">Profesyoneller</a>
+				<a href="yarisma.html">Yarışmalar</a>
+				<a href="blog.html">Blog</a>
+			</div>
+
+			<div class="mobile-proje-baslat">
+				<a href="yarisma-ekleme.html">Proje Başlat</a>
+			</div>
+		</div>
+
+
+
+
+
+
+		<!-- giriş yap formu -->
+		<div id="id01" class="modal">
+			<form class="modal-content animate" action="" method="post">
+				<div class="container">
+					<h3>Hoşgeldiniz</h3>
+					<p>Devam etmek için lütfen giriş yapın.</p>
+					<input type="mail" name="" placeholder="E-posta">
+					<input type="password" name="" placeholder="Şifre">
+					<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+					<p class="or">Veya</p>
+
+					<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+					<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+					<button type="submit">Giriş Yap</button>
+
+					<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+				</div>
+			</form>
+		</div>
+
+		<!-- kayıt ol formu -->
+		<div id="id02" class="modal2">
+			<form class="modal-content animate modal-kayit" action="" method="post">
+				<div class="container">
+					<h3>Kayıt Ol</h3>
+					<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+					<div class="register-radios">
+						<label class="container-check">Tasarımcıyım
+							<input type="checkbox">
+							<span class="checkmark-check"></span>
+						</label>
+						<label class="container-check">Tasarımcı Arıyorum
+							<input type="checkbox">
+							<span class="checkmark-check"></span>
+						</label>
+					</div>
+					<input type="mail" name="" placeholder="E-posta">
+					<input type="password" name="" placeholder="Şifre">
+					<label class="login-container">
+						Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
+						<input type="checkbox" checked="checked">
+						<span class="login-checkmark"></span>
+					</label>
+					<label class="login-container">
+						Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+						<input type="checkbox">
+						<span class="login-checkmark"></span>
+					</label>
+
+					<p class="or">Veya</p>
+
+					<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+					<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+					<button type="submit">Kayıt Ol</button>
+
+					<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+				</div>
+			</form>
+		</div>
+
+		<script>
+			$(function() {
+				$('input[name="birthday"]').daterangepicker({
+					"locale": {
+						"format": "DD/MM/YYYY",
+						"daysOfWeek": [
+						"Pa",
+						"Pt",
+						"Sa",
+						"Ça",
+						"Pe",
+						"Cu",
+						"Ct"
+						],
+						"monthNames": [
+						"Ocak",
+						"Şubat",
+						"Mart",
+						"Nisan",
+						"Mayıs",
+						"Haziran",
+						"Temmuz",
+						"Ağustos",
+						"Eylül",
+						"Ekim",
+						"Kasım",
+						"Aralık"
+						]
+					},
+					singleDatePicker: true,
+					showDropdowns: true,
+					minYear: 1901,
+					maxYear: parseInt(moment().format('YYYY'),10)
+				}, function(start, end, label) {
+					var years = moment().diff(start, 'years');
+				});
+			});
+		</script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</body>
+	</html>

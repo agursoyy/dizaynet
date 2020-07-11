@@ -1,0 +1,35 @@
+.ldBar {
+  position: relative;
+  width: 36px !important;
+  height: 36px !important;
+}
+@media only screen and (min-width: 340px) {
+  .ldBar {
+    width: 42px !important;
+    height: 42px !important;
+  }
+}
+@media only screen and (min-width: 572px) {
+  .ldBar {
+    width: 56px !important;
+    height: 56px !important;
+  }
+}
+.ldBar.label-center > .ldBar-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px #fff;
+  color: #5A5A5A;
+  font-family: "sofiapro-medium";
+  font-size: 16px;
+}
+.ldBar-label:after {
+  content: "";
+  display: inline;
+}
+.ldBar.no-percent .ldBar-label:after {
+  content: "";
+}

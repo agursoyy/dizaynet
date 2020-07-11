@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dizaynet</title>
+  <meta charset="utf-8">
+  <meta name="csrf-token" content="WkuURkyBdEWA0uOa1oM9wa9VennIz61ph7v1p6GO">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://dizaynet.net/prototip/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="http://dizaynet.net/prototip/assets/css/tasarim.css">
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="moblogin" style="display: block;">
+
+    <div class="firstScreen h-100 d-flex flex-column justify-content-center">
+      <a class="mobile-exit" href="http://dizaynet.net/prototip"><svg class="svg-inline--fa fa-times fa-w-11"
+          aria-hidden="true" focusable="false" data-prefix="fa" data-icon="times" role="img"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+          <path fill="currentColor"
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+          </path>
+        </svg><!-- <i class="fa fa-times"></i> --></a>
+
+      <div class="container">
+        <img src="http://dizaynet.net/prototip/assets/images/dizaynet.png" class="mobloginlogo mt-0">
+
+        <span class="text" style=""> İlham al <br> Profesyonel bul<br> Evini tasarla</span>
+        <div class="buttons-container">
+          <div class="buttons-container-btn">
+            <a class="email-login" href="#!"><svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true"
+                focusable="false" data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                </path>
+              </svg><!-- <i class="fa fa-envelope"></i> -->&nbsp; &nbsp;E-Posta ile devam et
+            </a>
+          </div>
+          <div class="buttons-container-btn-group">
+            <a class="facebook-login  d-flex flex-row justify-content-center align-items-center" href="#!">
+              <i class="fab fa-facebook-square"></i>
+              <span> Facebook ile devam et</span>
+            </a>
+
+            <a class="google-login" href="#!"><img
+                src="http://dizaynet.net/prototip/assets/images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et
+            </a>
+          </div>
+
+        </div>
+
+
+
+
+
+        <p class="bottomTerms">
+          Üye olarak hüküm , koşullar ve gizlilik politikasını kabul etmiş olursunuz
+        </p>
+        <p class="bottomProf">Kayıt Ol</p>
+      </div>
+    </div>
+    <style>
+      .registerScreen .registerTitle h2,
+      .loginScreen .registerTitle h2 {
+        color: white;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: "sofiapro-light";
+      }
+
+      .registerContent {
+        margin: 100px 10px 10px 10px;
+      }
+
+      .registerContent .text-field {
+        width: 100%;
+        height: 50px;
+        background: none;
+        border-bottom: 1px solid #fff;
+        color: white;
+      }
+
+      .registerContent .email-login {
+        margin: 30px 0 0 0 !important;
+      }
+
+      .registerContent .input label,
+      .registerContent .input input {
+        width: 100%;
+        float: left;
+      }
+
+      .registerContent .input {
+        height: 70px;
+      }
+
+      .registerContent .input {
+        position: relative;
+      }
+
+      .registerContent .input input {
+        position: relative;
+        height: 80px;
+        top: 10px;
+        border: none;
+        background: transparent;
+        font-family: "sofiapro-light";
+        font-size: 24px;
+        color: white;
+        font-weight: 300;
+      }
+
+      .registerContent .input label {
+        font-family: "sofiapro-light";
+        font-size: 20px;
+        color: white;
+        font-weight: 300;
+      }
+
+
+      .registerContent .input:before {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        background: white;
+        z-index: 3;
+      }
+
+      .registerContent .input label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        line-height: 60px;
+        color: white;
+      }
+
+      .registerContent .infoText {
+        color: white;
+        font-family: "sofiapro-light";
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .registerContent .register-radios label {
+        color: white;
+        padding: 0;
+        padding-bottom: 30px !important;
+        font-size: 20px;
+      }
+
+      .registerTitle p {
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+      }
+
+      .registerContent .dont-have-acc {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        font-family: "sofiapro-medium";
+      }
+
+      .registerContent .dont-have-acc a {
+        color: #d19e2c;
+        font-weight: bold;
+        font-family: "sofiapro-medium";
+      }
+
+      .loginScreen .forgot-pw {
+        text-align: left;
+        font-size: 18px;
+        color: #000000;
+        font-family: 'sofiapro-medium';
+        display: block;
+        width: 100%;
+        margin-top: 18px;
+      }
+    </style>
+    <div class="registerScreen">
+      <a class="mobile-exit" href="http://dizaynet.net/prototip"><svg class="svg-inline--fa fa-times fa-w-11"
+          aria-hidden="true" focusable="false" data-prefix="fa" data-icon="times" role="img"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+          <path fill="currentColor"
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+          </path>
+        </svg><!-- <i class="fa fa-times"></i> --></a>
+      <div class="registerTitle">
+        <h2>Kayıt Ol</h2>
+        <p>Devam etmek için lütfen bilgilerinizi girin.</p>
+      </div>
+      <div class="registerContent">
+        <form method="POST">
+          <div class="register-radios">
+            <label class="container-check">Profesyonel
+              <input type="radio" name="userType" id="professional">
+              <span class="checkmark-check"></span>
+            </label>
+            <label class="container-check">Ev Sahibi
+              <input type="radio" name="userType" id="home">
+              <span class="checkmark-check"></span>
+            </label>
+          </div>
+          <div class="input">
+            <label for="name">Ad Soyad</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="input">
+            <label for="email">E-Posta</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input">
+            <label for="password">Şifre</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <p class="infoText">
+            <input type="checkbox">
+            Hüküm , koşul ve gizlilik politikasını kabul ediyorum.</p>
+          <a class="email-login" href="#!">Kayıt ol</a>
+          <p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+
+          <div class="socialAcc" style="
+    position: absolute;
+    bottom: 50px;
+    width: 98%;
+">
+            <a class="facebook-login" href="#!" style="
+    display: inline-block;
+    width: 44%;
+    float: left;
+    text-align: center;
+    margin-left: 0;
+"><svg class="svg-inline--fa fa-facebook-square fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab"
+                data-icon="facebook-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                data-fa-i2svg="" style="
+    position: relative;
+    font-size: 28px;
+    left: 10px;
+">
+                <path fill="currentColor"
+                  d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                </path>
+              </svg>&nbsp;&nbsp;&nbsp;</a>
+            <a class="google-login" href="#!" style="
+    display: inline-block;
+    width: 46%;
+    float: left;
+    text-align: center;
+    margin-right: 0;
+"><img src="http://dizaynet.net/prototip/assets/images/google-icon.png" style="
+    width: 28px;
+    position: relative;
+    left: 10px;
+">&nbsp;&nbsp;&nbsp;</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="loginScreen">
+      <a class="mobile-exit" href="http://dizaynet.net/prototip"><svg class="svg-inline--fa fa-times fa-w-11"
+          aria-hidden="true" focusable="false" data-prefix="fa" data-icon="times" role="img"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+          <path fill="currentColor"
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+          </path>
+        </svg><!-- <i class="fa fa-times"></i> --></a>
+      <div class="registerTitle">
+        <h2>Giriş Yap</h2>
+        <p>Devam etmek için lütfen bilgilerinizi girin.</p>
+      </div>
+      <div class="registerContent">
+        <form method="POST">
+          <div class="input">
+            <label for="email">E-Posta</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input">
+            <label for="password">Şifre</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <a onclick="openLogin()" class="forgot-pw">Şifremi Unuttum</a>
+          <a class="email-login" href="#!">Giriş Yap</a>
+          <p class="dont-have-acc">Hesabınız yok mu? <a onclick="openLogin()">Kayıt Ol</a></p>
+
+          <div class="socialAcc" style="
+    position: absolute;
+    bottom: 50px;
+    width: 98%;
+">
+            <a class="facebook-login" href="#!" style="
+    display: inline-block;
+    width: 44%;
+    float: left;
+    text-align: center;
+    margin-left: 0;
+"><svg class="svg-inline--fa fa-facebook-square fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab"
+                data-icon="facebook-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                data-fa-i2svg="" style="
+    position: relative;
+    font-size: 28px;
+    left: 10px;
+">
+                <path fill="currentColor"
+                  d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                </path>
+              </svg>&nbsp;&nbsp;&nbsp;</a>
+            <a class="google-login" href="#!" style="
+    display: inline-block;
+    width: 46%;
+    float: left;
+    text-align: center;
+    margin-right: 0;
+"><img src="http://dizaynet.net/prototip/assets/images/google-icon.png" style="
+    width: 28px;
+    position: relative;
+    left: 10px;
+">&nbsp;&nbsp;&nbsp;</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <header>
+    <div class="logo">
+      <h1><a href="http://dizaynet.net/prototip">dizay<span>n</span>et</a></h1>
+    </div>
+
+    <div onclick="openSearch()" class="mobile-search">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+    <div class="search-bar">
+      <button><i class="fa fa-search"></i></button>
+      <input type="text" name="" placeholder="Eviniz için tasarım fikirleri bulun...">
+    </div>
+    <nav>
+      <a href="tasarim.html">Dizayn</a>
+      <a href="http://dizaynet.net/prototip/professionals">Profesyoneller</a>
+      <a href="yarisma.html">Yarışmalar</a>
+      <a href="http://dizaynet.net/prototip/blog">Blog</a>
+    </nav>
+    <div class="login-btn">
+      <a onclick="openLogin()">Giriş Yap</a>
+    </div>
+
+  </header>
+
+
+
+
+
+  <section class="hero-image">
+    <img src="http://dizaynet.net/prototip/assets/images/Foto1.jpg">
+    <div class="image-overlay">
+      <h1>Mekanlarınız İçin Tasarım <br>Fikirleri Edinin</h1>
+      <a href="yarisma-ekleme.html">Proje Başlat</a>
+    </div>
+  </section>
+
+
+
+
+  <div class="tabs">
+    <a href="http://dizaynet.net/prototip" class="active-tab">Mimari</a>
+    <a href="http://dizaynet.net/prototip">İç Mimari</a>
+    <a href="http://dizaynet.net/prototip">Peyzaj</a>
+    <a href="http://dizaynet.net/prototip">Endüstriyel Tasarım</a>
+  </div>
+
+  <section class="design-competition">
+    <div class="section-text section-text-1">
+      <h1>Tasarım Yarışmaları</h1>
+      <p>Projelere katılım gösterin! Yeteneklerinizi sergilemek için en iyi fırsatı yakalayın.</p>
+    </div>
+
+    <!-- bu carousel mobilde gözükecek -->
+    <div class="owl-carousel display owl-yarisma">
+      <div class="card">
+        <div class="card-img">
+          <div class="card-img-overlay">
+            <span>MİMARİ</span>
+            <a href="yarisma-detay.html">Mutfak Renevasyon Projesi <b><img
+                  src="http://dizaynet.net/prototip/assets/images/odulpng.svg">10.000₺</b></a>
+          </div>
+          <img src="http://dizaynet.net/prototip/assets/images/1.jpg">
+        </div>
+        <!-- TARİH aynı formatta data-countdown içine girilecek -->
+        <div class="timer">
+          <div class="counter" data-countdown="2020/05/10"></div>
+          <div class="counter-info">
+            <p>Gün</p>
+            <p>Saat</p>
+            <p>Dakika</p>
+          </div>
+        </div>
+        <a href="http://dizaynet.net/prototip">
+          KATIL
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <div class="card-img-overlay">
+            <span>MİMARİ</span>
+            <a href="yarisma-detay.html">Mutfak Renevasyon Projesi <b><img
+                  src="http://dizaynet.net/prototip/assets/images/odulpng.svg">10.000₺</b></a>
+          </div>
+          <img src="http://dizaynet.net/prototip/assets/images/2.jpg">
+        </div>
+        <!-- TARİH aynı formatta data-countdown içine girilecek -->
+        <div class="timer">
+          <div class="counter" data-countdown="2020/04/29"></div>
+          <div class="counter-info">
+            <p>Gün</p>
+            <p>Saat</p>
+            <p>Dakika</p>
+          </div>
+        </div>
+        <a href="http://dizaynet.net/prototip">
+          KATIL
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <div class="card-img-overlay">
+            <span>MİMARİ</span>
+            <a href="yarisma-detay.html">Mutfak Renevasyon Projesi <b><img
+                  src="http://dizaynet.net/prototip/assets/images/odulpng.svg">10.000₺</b></a>
+          </div>
+          <img src="http://dizaynet.net/prototip/assets/images/3.jpg">
+        </div>
+        <!-- TARİH aynı formatta data-countdown içine girilecek -->
+        <div class="timer">
+          <div class="counter" data-countdown="2020/04/30"></div>
+          <div class="counter-info">
+            <p>Gün</p>
+            <p>Saat</p>
+            <p>Dakika</p>
+          </div>
+        </div>
+        <a href="http://dizaynet.net/prototip">
+          KATIL
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <div class="card-img-overlay">
+            <span>MİMARİ</span>
+            <a href="yarisma-detay.html">Mutfak Renevasyon Projesi <b><img
+                  src="http://dizaynet.net/prototip/assets/images/odulpng.svg">10.000₺</b></a>
+          </div>
+          <img src="http://dizaynet.net/prototip/assets/images/4.jpg">
+        </div>
+        <!-- TARİH aynı formatta data-countdown içine girilecek -->
+        <div class="timer">
+          <div class="counter" data-countdown="2020/05/10"></div>
+          <div class="counter-info">
+            <p>Gün</p>
+            <p>Saat</p>
+            <p>Dakika</p>
+          </div>
+        </div>
+        <a href="http://dizaynet.net/prototip">
+          KATIL
+        </a>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="card-container">
+
+      <!-- bu kısım masaüstünde gözükecek -->
+      <div class="card">
+        <div class="card-img">
+          <div class="card-img-overlay">
+            <span>MİMARİ</span>
+            <a href="yarisma-detay.html">Mutfak Renevasyon Projesi <b><img
+                  src="http://dizaynet.net/prototip/assets/images/odulpng.svg">10.000₺</b></a>
+          </div>
+          <img src="http://dizaynet.net/prototip/assets/images/1.jpg">
+        </div>
+        <!-- TARİH data-countdown içine girilecek -->
+        <div class="timer">
+          <div class="counter" data-countdown="2020/05/01"></div>
+          <div class="counter-info">
+            <p>Gün</p>
+            <p>Saat</p>
+            <p>Dakika</p>
+          </div>
+        </div>
+        <a href="http://dizaynet.net/prototip">
+          KATIL
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <div class="card-img-overlay">
+            <span>MİMARİ</span>
+            <a href="yarisma-detay.html">Mutfak Renevasyon Projesi <b><img
+                  src="http://dizaynet.net/prototip/assets/images/odulpng.svg">10.000₺</b></a>
+          </div>
+          <img src="http://dizaynet.net/prototip/assets/images/2.jpg">
+        </div>
+        <!-- TARİH data-countdown içine girilecek -->
+        <div class="timer">
+          <div class="counter" data-countdown="2020/04/30"></div>
+          <div class="counter-info">
+            <p>Gün</p>
+            <p>Saat</p>
+            <p>Dakika</p>
+          </div>
+        </div>
+        <a href="http://dizaynet.net/prototip">
+          KATIL
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <div class="card-img-overlay">
+            <span>MİMARİ</span>
+            <a href="yarisma-detay.html">Mutfak Renevasyon Projesi <b><img
+                  src="http://dizaynet.net/prototip/assets/images/odulpng.svg">10.000₺</b></a>
+          </div>
+          <img src="http://dizaynet.net/prototip/assets/images/3.jpg">
+        </div>
+        <!-- TARİH data-countdown içine girilecek -->
+        <div class="timer">
+          <div class="counter" data-countdown="2020/04/30"></div>
+          <div class="counter-info">
+            <p>Gün</p>
+            <p>Saat</p>
+            <p>Dakika</p>
+          </div>
+        </div>
+        <a href="http://dizaynet.net/prototip">
+          KATIL
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <div class="card-img-overlay">
+            <span>MİMARİ</span>
+            <a href="yarisma-detay.html">Mutfak Renevasyon Projesi <b><img
+                  src="http://dizaynet.net/prototip/assets/images/odulpng.svg">10.000₺</b></a>
+          </div>
+          <img src="http://dizaynet.net/prototip/assets/images/4.jpg">
+        </div>
+        <!-- TARİH data-countdown içine girilecek -->
+        <div class="timer">
+          <div class="counter" data-countdown="2020/05/10"></div>
+          <div class="counter-info">
+            <p>Gün</p>
+            <p>Saat</p>
+            <p>Dakika</p>
+          </div>
+        </div>
+        <a href="http://dizaynet.net/prototip">
+          KATIL
+        </a>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+  <section class="design-ideas">
+    <div class="section-text section-text-2">
+      <h1>Yeni Tasarım Fikirleri</h1>
+      <p>Profesyoneller tarafından yüklenen güncel tasarımları keşfedin!</p>
+    </div>
+
+    <div class="big-image">
+      <div class="big-img-overlay">
+        <h3>Pi Stool</h3>
+        <span>tomasz michalski</span>
+        <p>Vivamus eget aliquam dui. Integer eu arcu vel arcu suscipit ultrices quis non mauris. Aenean scelerisque, sem
+          eu dictum commodo, velit nisi blandit magna, quis scelerisque ipsum lectus ut libero. Sed elit diam, dignissim
+        </p>
+      </div>
+      <img src="http://dizaynet.net/prototip/assets/images/big-image.jpg">
+    </div>
+
+    <div class="gallery">
+
+
+
+      <div class="gallery-img">
+        <div class="gallery-img-overlay">
+          <span>MİMARİ</span>
+          <a href="http://dizaynet.net/prototip">Mutfak Renevasyon Projesi</a>
+        </div>
+        <img src="http://dizaynet.net/prototip/assets/images/home-design.jpg">
+        <div class="index-gallery-bottom">
+          <img src="http://dizaynet.net/prototip/assets/images/person1.jpg" width="25px" height="25px">
+          <a href="http://dizaynet.net/prototip">Doğan Hazar</a>
+          <div class="index-gallery-buttons">
+            <button><i class="fa fa-thumbs-up"></i> 1532</button>
+            <button><i class="fa fa-eye"></i> 15103</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-img">
+        <div class="gallery-img-overlay">
+          <span>MİMARİ</span>
+          <a href="http://dizaynet.net/prototip">Mutfak Renevasyon Projesi</a>
+        </div>
+        <img src="http://dizaynet.net/prototip/assets/images/11.jpg">
+        <div class="index-gallery-bottom">
+          <img src="http://dizaynet.net/prototip/assets/images/person1.jpg" width="25px" height="25px">
+          <a href="http://dizaynet.net/prototip">Doğan Hazar</a>
+          <div class="index-gallery-buttons">
+            <button><i class="fa fa-thumbs-up"></i> 1532</button>
+            <button><i class="fa fa-eye"></i> 15103</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-img">
+        <div class="gallery-img-overlay">
+          <span>MİMARİ</span>
+          <a href="http://dizaynet.net/prototip">Mutfak Renevasyon Projesi</a>
+        </div>
+        <img src="http://dizaynet.net/prototip/assets/images/22.jpg">
+        <div class="index-gallery-bottom">
+          <img src="http://dizaynet.net/prototip/assets/images/person1.jpg" width="25px" height="25px">
+          <a href="http://dizaynet.net/prototip">Doğan Hazar</a>
+          <div class="index-gallery-buttons">
+            <button><i class="fa fa-thumbs-up"></i> 1532</button>
+            <button><i class="fa fa-eye"></i> 15103</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-img">
+        <div class="gallery-img-overlay">
+          <span>MİMARİ</span>
+          <a href="http://dizaynet.net/prototip">Mutfak Renevasyon Projesi</a>
+        </div>
+        <img src="http://dizaynet.net/prototip/assets/images/33.jpg">
+        <div class="index-gallery-bottom">
+          <img src="http://dizaynet.net/prototip/assets/images/person1.jpg" width="25px" height="25px">
+          <a href="http://dizaynet.net/prototip">Doğan Hazar</a>
+          <div class="index-gallery-buttons">
+            <button><i class="fa fa-thumbs-up"></i> 1532</button>
+            <button><i class="fa fa-eye"></i> 15103</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-img">
+        <div class="gallery-img-overlay">
+          <span>MİMARİ</span>
+          <a href="http://dizaynet.net/prototip">Mutfak Renevasyon Projesi</a>
+        </div>
+        <img src="http://dizaynet.net/prototip/assets/images/44.jpg">
+        <div class="index-gallery-bottom">
+          <img src="http://dizaynet.net/prototip/assets/images/person1.jpg" width="25px" height="25px">
+          <a href="http://dizaynet.net/prototip">Doğan Hazar</a>
+          <div class="index-gallery-buttons">
+            <button><i class="fa fa-thumbs-up"></i> 1532</button>
+            <button><i class="fa fa-eye"></i> 15103</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-img">
+        <div class="gallery-img-overlay">
+          <span>MİMARİ</span>
+          <a href="http://dizaynet.net/prototip">Mutfak Renevasyon Projesi</a>
+        </div>
+        <img src="http://dizaynet.net/prototip/assets/images/55.jpg">
+        <div class="index-gallery-bottom">
+          <img src="http://dizaynet.net/prototip/assets/images/person1.jpg" width="25px" height="25px">
+          <a href="http://dizaynet.net/prototip">Doğan Hazar</a>
+          <div class="index-gallery-buttons">
+            <button><i class="fa fa-thumbs-up"></i> 1532</button>
+            <button><i class="fa fa-eye"></i> 15103</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-img">
+        <div class="gallery-img-overlay">
+          <span>MİMARİ</span>
+          <a href="http://dizaynet.net/prototip">Mutfak Renevasyon Projesi</a>
+        </div>
+        <img src="http://dizaynet.net/prototip/assets/images/66.jpg">
+        <div class="index-gallery-bottom">
+          <img src="http://dizaynet.net/prototip/assets/images/person1.jpg" width="25px" height="25px">
+          <a href="http://dizaynet.net/prototip">Doğan Hazar</a>
+          <div class="index-gallery-buttons">
+            <button><i class="fa fa-thumbs-up"></i> 1532</button>
+            <button><i class="fa fa-eye"></i> 15103</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-img">
+        <div class="gallery-img-overlay">
+          <span>MİMARİ</span>
+          <a href="http://dizaynet.net/prototip">Mutfak Renevasyon Projesi</a>
+        </div>
+        <img src="http://dizaynet.net/prototip/assets/images/77.jpg">
+        <div class="index-gallery-bottom">
+          <img src="http://dizaynet.net/prototip/assets/images/person1.jpg" width="25px" height="25px">
+          <a href="http://dizaynet.net/prototip">Doğan Hazar</a>
+          <div class="index-gallery-buttons">
+            <button><i class="fa fa-thumbs-up"></i> 1532</button>
+            <button><i class="fa fa-eye"></i> 15103</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+
+  <section class="crew">
+    <div class="section-text">
+      <h1>Profesyoneller ile Çalışın</h1>
+      <p>Zaman kaybetmeden alanında yetkin insanlar ile doğrudan iletişime geçin!</p>
+    </div>
+
+    <!-- mobilde görünecek olan profesyoneller bölümü -->
+    <div class="owl-carousel display">
+      <div class="profile-box">
+        <div class="overlay">
+          <img class="profile-foto" src="http://dizaynet.net/prototip/assets/images/person1.jpg">
+          <a href="profil.html">Sinem Sağıroğlu</a>
+          <span>Mimar</span>
+          <img class="mobile-stars" src="http://dizaynet.net/prototip/assets/images/ProfileStars.png">
+          <a class="prof-takip-et" href="http://dizaynet.net/prototip">TAKİP ET</a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <div class="overlay">
+          <img class="profile-foto" src="http://dizaynet.net/prototip/assets/images/person2.jpg">
+          <a href="profil.html">Sinem Sağıroğlu</a>
+          <span>Mimar</span>
+          <img class="mobile-stars" src="http://dizaynet.net/prototip/assets/images/ProfileStars.png">
+          <a class="prof-takip-et" href="http://dizaynet.net/prototip">TAKİP ET</a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <div class="overlay">
+          <img class="profile-foto" src="http://dizaynet.net/prototip/assets/images/person3.jpg">
+          <a href="profil.html">Sinem Sağıroğlu</a>
+          <span>Mimar</span>
+          <img class="mobile-stars" src="http://dizaynet.net/prototip/assets/images/ProfileStars.png">
+          <a class="prof-takip-et" href="http://dizaynet.net/prototip">TAKİP ET</a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <div class="overlay">
+          <img class="profile-foto" src="http://dizaynet.net/prototip/assets/images/person4.jpg">
+          <a href="profil.html">Sinem Sağıroğlu</a>
+          <span>Mimar</span>
+          <img class="mobile-stars" src="http://dizaynet.net/prototip/assets/images/ProfileStars.png">
+          <a class="prof-takip-et" href="http://dizaynet.net/prototip">TAKİP ET</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- masaüstünde gözükecek profesyoneller bölümü -->
+    <div class="profiles">
+      <div class="profile-box">
+        <div class="overlay">
+          <img class="profile-foto" src="http://dizaynet.net/prototip/assets/images/person1.jpg">
+          <a href="profil.html">Sinem Sağıroğlu</a>
+          <span>Mimar</span>
+          <img src="http://dizaynet.net/prototip/assets/images/ProfileStars.png">
+          <a class="prof-takip-et" href="http://dizaynet.net/prototip">TAKİP ET</a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <div class="overlay">
+          <img class="profile-foto" src="http://dizaynet.net/prototip/assets/images/person2.jpg">
+          <a href="profil.html">Sinem Sağıroğlu</a>
+          <span>Mimar</span>
+          <img src="http://dizaynet.net/prototip/assets/images/ProfileStars.png">
+          <a class="prof-takip-et" href="http://dizaynet.net/prototip">TAKİP ET</a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <div class="overlay">
+          <img class="profile-foto" src="http://dizaynet.net/prototip/assets/images/person3.jpg">
+          <a href="profil.html">Sinem Sağıroğlu</a>
+          <span>Mimar</span>
+          <img src="http://dizaynet.net/prototip/assets/images/ProfileStars.png">
+          <a class="prof-takip-et" href="http://dizaynet.net/prototip">TAKİP ET</a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <div class="overlay">
+          <img class="profile-foto" src="http://dizaynet.net/prototip/assets/images/person4.jpg">
+          <a href="profil.html">Sinem Sağıroğlu</a>
+          <span>Mimar</span>
+          <img src="http://dizaynet.net/prototip/assets/images/ProfileStars.png">
+          <a class="prof-takip-et" href="http://dizaynet.net/prototip">TAKİP ET</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="blog">
+    <div class="section-text">
+      <h1>Blogumuza Göz Atın</h1>
+      <p>Tasarımlarınıza yön verecek yeni fikirler edinin!</p>
+    </div>
+    <div class="blog-articles">
+
+
+      <div class="blog-box">
+        <img src="http://dizaynet.net/prototip/assets/images/11.jpg">
+        <div class="blog-tags">
+          <a href="http://dizaynet.net/prototip">MİMARİ</a>
+        </div>
+        <a href="blog-detay.html" class="blog-title">Why You Should Visit Turkey’s</a>
+      </div>
+
+
+      <div class="blog-box">
+        <img src="http://dizaynet.net/prototip/assets/images/22.jpg">
+        <div class="blog-tags">
+          <a href="http://dizaynet.net/prototip">MİMARİ</a>
+        </div>
+        <a href="blog-detay.html" class="blog-title">The Magic of Letting a Souvenir Find You</a>
+      </div>
+
+
+      <div class="blog-box">
+        <img src="http://dizaynet.net/prototip/assets/images/33.jpg">
+        <div class="blog-tags">
+          <a href="http://dizaynet.net/prototip">MİMARİ</a>
+        </div>
+        <a href="blog-detay.html" class="blog-title">Why You Should Visit Turkey’s</a>
+      </div>
+
+
+      <div class="blog-box">
+        <img src="http://dizaynet.net/prototip/assets/images/44.jpg">
+        <div class="blog-tags">
+          <a href="http://dizaynet.net/prototip">MİMARİ</a>
+        </div>
+        <a href="blog-detay.html" class="blog-title">The Magic of Letting a Souvenir Find You</a>
+      </div>
+
+
+
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer>
+    <div class="footer-top">
+      <div class="top-left">
+        <h1>dizay<span>n</span>et</h1>
+        <p>
+          Mekanlarınızı baştan tasarlamanın en yeni yolu.
+        </p>
+        <div class="app-badges">
+          <a href="http://dizaynet.net/prototip!" class="apple">
+            <img src="http://dizaynet.net/prototip/assets/images/appstore.svg" width="120px" height="38px">
+          </a>
+          <a href="http://dizaynet.net/prototip!" class="google-play">
+            <img src="http://dizaynet.net/prototip/assets/images/googleplay.png" width="120px" height="38px">
+          </a>
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="kesfet">
+          <h2>Keşfet</h2>
+          <a href="http://dizaynet.net/prototip">Anasayfa</a>
+          <a href="tasarim.html">Dizayn</a>
+          <a href="yarisma.html">Yarışmalar</a>
+          <a href="http://dizaynet.net/prototip/blog">Blog</a>
+          <a href="http://dizaynet.net/prototip/professionals">Profesyoneller</a>
+        </div>
+
+
+        <div class="bilgi">
+          <h2>Bilgi</h2>
+          <a href="http://dizaynet.net/prototip!">Hakkımızda</a>
+          <a href="http://dizaynet.net/prototip!">Profesyonel Olun</a>
+          <a href="http://dizaynet.net/prototip!">Premium Üyelik</a>
+          <a href="http://dizaynet.net/prototip!">İletişim</a>
+        </div>
+      </div>
+
+      <div class="footer-form">
+        <h3>Bize Ulaşın</h3>
+        <p>Email: support@domain.com <br>
+          Phone: 1 (00) 832 2342
+        </p>
+        <div class="icons">
+          <a href="http://dizaynet.net/prototip"><i class="fab fa-facebook-square"></i></a>
+          <a href="http://dizaynet.net/prototip"><i class="fab fa-behance"></i></a>
+          <a href="http://dizaynet.net/prototip"><i class="fab fa-instagram"></i></a>
+          <a href="http://dizaynet.net/prototip"><i class="fab fa-twitter"></i></a>
+          <a href="http://dizaynet.net/prototip"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2020 DİZAYNET. Tüm hakları saklıdır.</p>
+      <!--<div class="bottom-links">
+            <a href="http://dizaynet.net/prototip">Üyelik Sözleşmesi</a>
+            <a href="http://dizaynet.net/prototip">Şartlar ve Koşullar</a>
+            <a href="http://dizaynet.net/prototip">Sıkça Sorulan Sorular</a>
+        </div>-->
+    </div>
+  </footer>
+
+
+
+
+  <div class="mobile-bottom-menu">
+    <ul>
+      <li><a href="tasarim.html"><img src="http://dizaynet.net/prototip/assets/images/dizayn-ico.svg" alt=""></a></li>
+      <li><a href="http://dizaynet.net/prototip/professionals"><img
+            src="http://dizaynet.net/prototip/assets/images/profesyoneller-ico.svg" alt=""></a></li>
+      <li><a href="yarisma.html"><img src="http://dizaynet.net/prototip/assets/images/yarisma-ico.svg" alt=""></a></li>
+      <li><a href="http://dizaynet.net/prototip/blog" class="active-bottom-link"><img
+            src="http://dizaynet.net/prototip/assets/images/blog-ico.svg" alt=""></a></li>
+      <li>
+        <a class="openMobLogin" href="javascript:openMobLogin();">
+          <i class="fa fa-user-circle"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div id="id03" class="mobile-search-modal">
+    <form class="search-modal">
+      <input type="text" name="" placeholder="Tasarım fikir bulun..">
+      <button><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <div class="mobile-cont-filter" id="mobile-cont-filter">
+
+  </div>
+
+  <div class="mobile-menu-cont" id="mobile-menu-cont">
+    <div class="mobil-login">
+      <div class="mobil-login-top">
+        <a onclick="openLogin()">Giriş Yap</a>
+        <a href="http://dizaynet.net/prototip">Profesyonel Ol</a>
+      </div>
+      <button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
+    </div>
+
+    <div class="mobile-kesfedin" id="mobile-kesfedin">
+      <p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
+      <div class="kesfedin-links">
+        <a href="kesfedin.html"> Mimari</a>
+        <a href="kesfedin.html">İç Mimari</a>
+        <a href="kesfedin.html">Peyzaj</a>
+        <a href="kesfedin.html">Endüstriyel Tasarım</a>
+      </div>
+    </div>
+
+    <div class="mobile-menu-nav">
+      <a href="tasarim.html"> Dizayn</a>
+      <a href="http://dizaynet.net/prototip/professionals">Profesyoneller</a>
+      <a href="yarisma.html">Yarışmalar</a>
+      <a href="http://dizaynet.net/prototip/blog">Blog</a>
+    </div>
+
+    <div class="mobile-proje-baslat">
+      <a href="yarisma-ekleme.html">Proje Başlat</a>
+    </div>
+  </div>
+
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="http://dizaynet.net/prototip/login" method="POST">
+      <input type="hidden" name="_token" value="WkuURkyBdEWA0uOa1oM9wa9VennIz61ph7v1p6GO">
+      <div class="container">
+        <h3>Hoşgeldiniz</h3>
+        <p>Devam etmek için lütfen giriş yapın.</p>
+        <input type="email" name="email" placeholder="E-posta">
+        <input type="password" name="password" placeholder="Şifre">
+        <a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+        <p class="or">Veya</p>
+        <a class="facebook-login" href="http://dizaynet.net/prototip!"><i
+            class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+        <a class="google-login" href="http://dizaynet.net/prototip!"><img
+            src="http://dizaynet.net/prototip/assets/images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+        <button type="submit">Giriş Yap</button>
+
+        <p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+      </div>
+    </form>
+  </div>
+
+  <div id="id02" class="modal2">
+    <form class="modal-content animate modal-kayit" action="http://dizaynet.net/prototip/register" method="POST">
+      <input type="hidden" name="_token" value="WkuURkyBdEWA0uOa1oM9wa9VennIz61ph7v1p6GO">
+      <div class="container">
+        <h3>Kayıt Ol</h3>
+        <p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+        <div class="register-radios">
+          <label class="container-check">Ev Sahibi
+            <input type="radio" name="type" id="home" value="1">
+            <span class="checkmark-check"></span>
+          </label>
+          <label class="container-check">Profesyonel
+            <input type="radio" name="type" id="professional" value="2">
+            <span class="checkmark-check"></span>
+          </label>
+        </div>
+        <input type="text" name="name" placeholder="Ad Soyad">
+        <input type="email" name="email" placeholder="E-posta">
+        <input type="password" name="password" placeholder="Şifre">
+        <label class="login-container">
+          Hüküm & Koşullar ve Gizlilik Politikasını kabul ediyorum.
+          <input type="checkbox">
+          <span class="login-checkmark"></span>
+        </label>
+        <p class="or">Veya</p>
+        <a class="facebook-login" href="http://dizaynet.net/prototip!">
+          <i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et
+        </a>
+        <a class="google-login" href="http://dizaynet.net/prototip!">
+          <img src="http://dizaynet.net/prototip/assets/images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et
+        </a>
+        <button type="submit">Kayıt Ol</button>
+        <p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript">
+
+    // Yarışmalar sayacı
+    $('[data-countdown]').each(function () {
+      var $this = $(this), finalDate = $(this).data('countdown');
+      $this.countdown(finalDate, function (event) {
+        var gun_ilk = event.strftime('%D')[0];
+        var gun_son = event.strftime('%D')[1];
+
+        var saat_ilk = event.strftime('%H')[0];
+        var saat_son = event.strftime('%H')[1];
+
+        var dakika_ilk = event.strftime('%M')[0];
+        var dakika_son = event.strftime('%M')[1];
+
+        $this.html(event.strftime(`
+                        <span>${gun_ilk}</span><span>${gun_son}</span>:<span>${saat_ilk}</span><span>${saat_son}</span>:<span>${dakika_ilk}</span><span>${dakika_son}</span>
+                        `));
+      });
+    });
+
+    // profesyoneller ve yarıışmalar mobil slider
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+
+  </script>
+  <script type="text/javascript" src="http://dizaynet.net/prototip/assets/js/main.js"></script>
+  <script>
+    function openMobLogin() {
+      $('.moblogin').show();
+    }
+    $('.bottomProf').click(function () {
+      $('.firstScreen').hide();
+      $('.registerScreen').show();
+    });
+
+    $('.firstScreen .email-login').click(function () {
+      $('.firstScreen').hide();
+      $('.registerScreen').hide();
+      $('.loginScreen').show();
+    });
+
+
+    $(function () {
+      $(".input input")
+        .focus(function () {
+          $(this)
+            .parent(".input")
+            .each(function () {
+              $("label", this).css({
+                "line-height": "18px",
+                "font-size": "18px",
+                "font-weight": "100",
+                top: "10px"
+              });
+              $(".spin", this).css({
+                width: "100%"
+              });
+            });
+        })
+        .blur(function () {
+          $(".spin").css({
+            width: "0px"
+          });
+          if ($(this).val() == "") {
+            $(this)
+              .parent(".input")
+              .each(function () {
+                $("label", this).css({
+                  "line-height": "60px",
+                  "font-size": "20px",
+                  "font-weight": "300",
+                  top: "20px"
+                });
+              });
+          }
+        });
+
+      $(".button").click(function (e) {
+        var pX = e.pageX,
+          pY = e.pageY,
+          oX = parseInt($(this).offset().left),
+          oY = parseInt($(this).offset().top);
+
+        $(this).append(
+          '<span class="click-efect x-' +
+          oX +
+          " y-" +
+          oY +
+          '" style="margin-left:' +
+          (pX - oX) +
+          "px;margin-top:" +
+          (pY - oY) +
+          'px;"></span>'
+        );
+        $(".x-" + oX + ".y-" + oY + "").animate(
+          {
+            width: "500px",
+            height: "500px",
+            top: "-250px",
+            left: "-250px"
+          },
+          600
+        );
+        $("button", this).addClass("active");
+      });
+
+      $(".alt-2").click(function () {
+        if (!$(this).hasClass("material-button")) {
+          $(".shape").css({
+            width: "100%",
+            height: "100%",
+            transform: "rotate(0deg)"
+          });
+
+          setTimeout(function () {
+            $(".overbox").css({
+              overflow: "initial"
+            });
+          }, 600);
+
+          $(this).animate(
+            {
+              width: "140px",
+              height: "140px"
+            },
+            500,
+            function () {
+              $(".box").removeClass("back");
+
+              $(this).removeClass("active");
+            }
+          );
+
+          $(".overbox .title").fadeOut(300);
+          $(".overbox .input").fadeOut(300);
+          $(".overbox .button").fadeOut(300);
+
+          $(".alt-2").addClass("material-buton");
+        }
+      });
+
+      $(".material-button").click(function () {
+        if ($(this).hasClass("material-button")) {
+          setTimeout(function () {
+            $(".overbox").css({
+              overflow: "hidden"
+            });
+            $(".box").addClass("back");
+          }, 200);
+          $(this).addClass("active").animate({
+            width: "700px",
+            height: "700px"
+          });
+
+          setTimeout(function () {
+            $(".shape").css({
+              width: "50%",
+              height: "50%",
+              transform: "rotate(45deg)"
+            });
+
+            $(".overbox .title").fadeIn(300);
+            $(".overbox .input").fadeIn(300);
+            $(".overbox .button").fadeIn(300);
+          }, 700);
+
+          $(this).removeClass("material-button");
+        }
+
+        if ($(".alt-2").hasClass("material-buton")) {
+          $(".alt-2").removeClass("material-buton");
+          $(".alt-2").addClass("material-button");
+        }
+      });
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>

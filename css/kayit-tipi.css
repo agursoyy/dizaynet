@@ -1,0 +1,76 @@
+
+.register-type {
+	width: 100%;
+	height: calc(100vh - 60px);
+	margin-top: 60px;
+	background-image: url("../images/register-type.jpg");
+	background-repeat: no-repeat;
+	/* Location of the image */
+
+	/* Background image is centered vertically and horizontally at all times */
+	background-position: center center;
+
+	/* Background image doesn't tile */
+	background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when 
+  the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+  on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+  while the background image is loading */
+  background-color: #464646;
+}
+
+
+
+.register-type-overlay {
+	width: 100%;
+	height: calc(100vh - 60px);
+	background-color: rgba(0,0,0,.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.types {
+	width: 778px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.type-box {
+	width: 364px;
+	height: 380px;
+	background-color: #fff;
+	border: 1px solid #D19E2C;
+	border-radius: 6px;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.types {
+		width: 778px;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.type-box {
+		width: 300px;
+		height: 280px;
+		background-color: #fff;
+		border: 1px solid #D19E2C;
+		border-radius: 6px;
+		margin-bottom: 20px;
+	}
+}

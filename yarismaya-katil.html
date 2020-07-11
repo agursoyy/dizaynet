@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dogan Hazar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/yarisma-ekleme.css">
+	<link rel="stylesheet" type="text/css" href="css/proje-olustur.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div onclick="openMobileMenu()" class="hamburger-menu">
+			<button><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="logo">
+			<h1><a href="index.html">dizay<span>n</span>et</a></h1>
+		</div>
+
+		<div onclick="openSearch()" class="mobile-search">
+			<button><i class="fa fa-search"></i></button>
+		</div>
+		<div class="search-bar">
+			<button><i class="fa fa-search"></i></button>
+			<input type="text" name="" placeholder="Eviniz için tasarım fikirleri bulun...">
+		</div>
+		<nav>
+			<a href="tasarim.html">Dizayn</a>
+			<a href="profesyoneller.html">Profesyoneller</a>
+			<a href="yarisma.html">Yarışmalar</a>
+			<a href="blog.html">Blog</a>
+		</nav>
+		<div class="login-btn">
+			<a onclick="openLogin()">Giriş Yap</a>
+		</div>
+
+	</header>
+
+
+<!--
+	<section class="hero-image">
+		<img src="images/yarismaekle.jpg">
+		<div class="image-overlay">
+			<h1>Bize İhtiyacınızdan Bahsedin</h1>
+			<p>Profesyonellerle hemen iletişime geçin. Profilleri, yorumları ve portföyleri <br> görüntüleyin. Teklifleri beğendiğiniz takdirde satın alın
+			</p>
+		</div>
+	</section>
+-->
+
+
+
+<section class="yarisma-ekle">
+	<div class="form-nav">
+		<nav id="desktop-nav">
+			<a href="#general" class="active-nav nav_btn">Genel Bilgiler</a>	
+			<a href="#contact" class="nav_btn">Proje Detayları</a>
+		</nav>
+		<nav class="mobile-nav">
+			<a href="#general" class="active-nav nav_btn"><i class="fa fa-cog"></i></a>
+			<a href="#highlights" class="nav_btn"><i class="fa fa-tag"></i></a>
+			<a href="#location" class="nav_btn"><i class="fa fa-map-marker-alt"></i></a> 
+			<a href="#contact" class="nav_btn"><i class="fa fa-phone"></i></a>
+			<a href="#media" class="nav_btn"><i class="fa fa-image"></i></a>
+		</nav>
+	</div>
+
+
+	<form method="POST" action="" id="general-form">
+		<h1>Proje Oluşturun</h1>
+		<p></p>
+
+		<div class="form-box" id="general">
+			<div class="form-section">
+				<h3>GENERAL</h3>
+				<div class="el">
+					<p>Proje Adı</p>
+					<input type="text" name="" placeholder="Projenin adı">
+				</div>
+				<div class="el">
+					<p>Proje Tanımı</p>
+					<input type="text" name="" placeholder="Projenin Tanımı">
+				</div>
+				
+				<div class="el">
+					<p>Lokasyon (şehir)</p>
+					<input type="text" name="" placeholder="Yalnızca şehir adı giriniz">
+				</div>
+
+				<div class="el">
+					<p>Alan (m2)</p>
+					<input type="text" name="" placeholder="m2 biriminde proje alanı">
+				</div>
+
+				<div class="el">
+					<p>Emeği Geçenler</p>
+					<input type="text" name="" placeholder="Projede emeği geçenler">
+				</div>
+
+				<div class="el">
+					<p>Link</p>
+					<input type="text" name="" placeholder="https://">
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="form-box" id="yeniresim">
+			<div class="form-section">
+				<h3>PROJEYE YENİ RESİM EKLE</h3>
+				<span onclick="addNewImg()" class="yeni-resim"><i class="fa fa-plus"></i> Yeni Resim Ekle</span>
+			</div>
+		</div>
+
+
+		<div id="new-images">
+			
+		</div>
+
+		<div class="form-box img-form" id="contact">	
+			<div class="form-section">
+				<h3>PROJE DETAYLARI</h3>
+				<div class="el">
+					<p>Proje Resimleri</p>
+					<input type="file" class="custom-file-input" multiple>
+				</div>
+				<div class="el">
+					<p>Anahtar Kelimeler</p>
+					<input type="text" name="" placeholder="Anahtar kelimeleri girin">
+				</div>
+
+
+
+
+
+			</div>
+		</div>
+
+		<div class="submit-btn">
+			<button type="submit">GÖNDER</button>
+		</div>
+
+		<div class="asd" style="width: 100%;
+		height: 100%;margin-bottom: 150px;"></div>
+	</form>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<div id="id03" class="mobile-search-modal">
+	<form class="search-modal">
+		<input type="text" name="" placeholder="Tasarım fikir bulun..">
+		<button><i class="fa fa-search"></i></button>
+	</form>
+</div>
+
+
+
+<div class="mobile-cont-filter" id="mobile-cont-filter">
+	
+</div>
+
+<div class="mobile-menu-cont" id="mobile-menu-cont">
+	<div class="mobil-login">
+		<div class="mobil-login-top">
+			<a onclick="openLogin()">Giriş Yap</a>
+			<a href="#">Profesyonel Ol</a>
+		</div>
+		<button onclick="closeMobileMenu()"><i class="fa fa-times"></i></button>
+	</div>
+
+	<div class="mobile-kesfedin" id="mobile-kesfedin">
+		<p onclick="openKesfedin()">Kesfedin <i class="fa fa-chevron-down"></i></p>
+		<div class="kesfedin-links">
+			<a href="#"> Mimari</a>
+			<a href="#">İç Mimari</a>
+			<a href="#">Peyzaj</a>
+			<a href="#">Endüstriyel Tasarım</a>
+		</div>
+	</div>
+
+	<div class="mobile-menu-nav">
+		<a href="tasarim.html"> Dizayn</a>
+		<a href="profesyoneller">Profesyoneller</a>
+		<a href="yarisma.html">Yarışmalar</a>
+		<a href="blog.html">Blog</a>
+	</div>
+
+	<div class="mobile-proje-baslat">
+		<a href="yarisma-ekleme.html">Proje Başlat</a>
+	</div>
+</div>
+
+
+
+
+
+
+<!-- giriş yap formu -->
+<div id="id01" class="modal">
+	<form class="modal-content animate" action="" method="post">
+		<div class="container">
+			<h3>Hoşgeldiniz</h3>
+			<p>Devam etmek için lütfen giriş yapın.</p>
+			<input type="mail" name="" placeholder="E-posta">
+			<input type="password" name="" placeholder="Şifre">
+			<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+			<p class="or">Veya</p>
+
+			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+			<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+			<button type="submit">Giriş Yap</button>
+
+			<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+		</div>
+	</form>
+</div>
+
+<!-- kayıt ol formu -->
+<div id="id02" class="modal2">
+	<form class="modal-content animate modal-kayit" action="" method="post">
+		<div class="container">
+			<h3>Kayıt Ol</h3>
+			<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+			<div class="register-radios">
+				<label class="container-check">Tasarımcıyım
+					<input type="checkbox">
+					<span class="checkmark-check"></span>
+				</label>
+				<label class="container-check">Tasarımcı Arıyorum
+					<input type="checkbox">
+					<span class="checkmark-check"></span>
+				</label>
+			</div>
+			<input type="mail" name="" placeholder="E-posta">
+			<input type="password" name="" placeholder="Şifre">
+			<label class="login-container">
+				Haber bülteni ve yenilikler ile ilgili mail almak istiyorum. 
+				<input type="checkbox" checked="checked">
+				<span class="login-checkmark"></span>
+			</label>
+			<label class="login-container">
+				Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+				<input type="checkbox">
+				<span class="login-checkmark"></span>
+			</label>
+
+			<p class="or">Veya</p>
+
+			<a class="facebook-login" href="#!"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+			<a class="google-login" href="#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile devam et</a>
+			<button type="submit">Kayıt Ol</button>
+
+			<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+		</div>
+	</form>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+	var general_form = document.getElementById('new-images');
+	function addNewImg() {
+		var yenidiv = document.createElement("DIV");
+		var form_section = document.createElement("DIV");
+		form_section.setAttribute("class", "form-section");
+		form_section.innerHTML = `
+		
+		<h3>PROJE DETAYLARI</h3>
+		<div class="el">
+		<p>Yeni Resim</p>
+		<input type="file" class="custom-file-input">
+		</div>
+		<div class="el">
+		<p>Resim Adı</p>
+		<input type="text" name="" placeholder="Resim adı">
+		</div>
+		
+		`;
+
+		yenidiv.setAttribute("class", "form-box");
+		yenidiv.appendChild(form_section);
+
+		general_form.appendChild(yenidiv);
+		window.scrollTo(0,document.body.scrollHeight);
+	}
+
+
+
+
+
+
+
+
+</script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

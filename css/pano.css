@@ -1,0 +1,174 @@
+
+
+.card-container-pano {
+	flex: 1;
+	height: auto;
+	margin: 30px 0 10px 35px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.card-container-pano .card-pano-wrapper {
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+}
+.card-container-pano .card-pano-wrapper .label {
+	width: 100%;
+	padding: 4px 10px;
+}
+.card-container-pano .card-pano-wrapper .label .title {
+	font-size: 14px;
+	font-family: "sofiapro-medium";
+	color: #363732; 
+ }
+ .card-container-pano .card-pano-wrapper .label .exp {
+	font-size: 11px;
+	font-family: "sofiapro-light";
+	line-height: 12px;
+	color: #363732;
+}
+.card-container-pano .card-pano {
+	width: 100%;
+	height: 230px;
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.card-container-pano .card-pano img {
+	width: 50%;
+	height: 50%;
+}
+
+
+
+.card-container-pano .card-pano .card-img-overlay-pano {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.76) 0%, rgba(125,185,232,0) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 10px;
+	border-radius: 10px 10px 0 0;
+	padding-left: 26px;
+	padding-top: 16px;
+}
+/*
+.card-container-pano .card-pano:hover .card-img-overlay-pano {
+	display: flex;
+	padding-left: 26px;
+	padding-top: 16px;
+	}*/
+
+	.card-container-pano .card-pano .card-img-overlay-pano span {
+		font-size: 16px;
+		font-family: 'sofiapro-light';
+		font-weight: bolder;
+		color: #FFF;
+	}
+
+	.card-container-pano .card-pano .card-img-overlay-pano p {
+		font-size: 14px;
+		font-family: 'sofiapro-light';
+		color: #fff;
+	}
+
+	.card-container-pano .card-pano .card-img-overlay-pano p > b {
+		font-size: 16px;
+		font-weight: var(--medium);
+		color: #FFD982;
+	}
+
+
+
+
+
+	@media only screen and (max-width: 550px) {
+
+		.card-container-pano {
+			flex: 1;
+			width: 100%;
+			height: auto;
+			margin: 20px auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+
+		.card-container-pano .card-pano {
+			width: 100%;
+			padding-left: 0px;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 30px;
+		}
+/*
+		.card-container-pano .card-pano {
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+			overflow: hidden;
+			position: relative;
+			padding: 0 !important;
+		}
+
+		.card-container-pano .card-pano img {
+			width: 49%;
+			height: auto;
+			margin: -2px !important;
+			box-shadow: -5px -5px 10px rgba(0,0,0,0.16);
+		}
+
+
+		.card-container-pano .card-pano .card-img-pano .card-img-overlay-pano {
+			width: calc(100% - 8px);
+			height: 50%;
+			position: absolute;
+			top: 100;
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0.76) 0%, rgba(125,185,232,0) 100%);
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
+			display: none;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding: 10px;
+			border-radius: 10px 10px 0 0;
+		}
+		*/
+
+	}
+/*
+
+	@media only screen and (min-width: 1920px) {
+
+
+		section.profile-container {
+			width: 90%;
+			padding-left: calc((100vw - 1920px) / 2);
+			padding-right: calc((100vw - 1920px) / 2);
+			height: auto;
+			margin: 0 auto;
+			margin-top: -200px;
+			z-index: 99;
+			display: flex;
+			margin-bottom: 200px;
+		}
+
+
+	} */

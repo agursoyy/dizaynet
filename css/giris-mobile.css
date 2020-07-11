@@ -1,0 +1,182 @@
+#giris-mobile {
+  position: fixed;
+  width: 100%;
+  z-index: 10000000;
+  height: calc(100vh + 160px);
+  overflow: hidden;
+  background: url('../images/loginbanner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#giris-mobile .wrapper {
+  width: 100%;
+  height: 100vh;  /*-webkit-fill-available;*/
+  overflow-y: scroll;
+}
+#giris-mobile .wrapper .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#giris-mobile .close-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
+#giris-mobile .close-link img {
+  height: 18px;
+}
+#giris-mobile .page-text{
+  margin-top: 20px;
+  text-align: center;
+}
+#giris-mobile .page-text .title{
+  font-size: 24px;
+  font-family: "sofiapro-medium";
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+#giris-mobile .page-text .subtitle{
+  font-size: 14px;
+  font-family: "sofiapro-light";
+  color: #ffffff;
+}
+#giris-mobile .flex-item-2 {
+}
+#giris-mobile .btn {
+  height: 45px;
+}
+#giris-mobile .login-form .form-group {
+  position: relative;
+}
+#giris-mobile .login-form label {
+  color: #ffffff;
+  font-family: "sofiapro-light";
+  font-size: 16px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.2s ease-in;
+}
+#giris-mobile .login-form input {
+  border: none;
+  background-color: transparent !important;
+  border-radius: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  z-index: 1;
+  padding-left: 0;
+   display: inline-block;
+  position: relative;
+  background: none;
+}
+
+#giris-mobile .login-form .form-group:not(:last-child) {
+  margin-bottom: 30px;
+}
+#giris-mobile .login-form input:focus {
+  box-shadow: none !important;
+}
+#giris-mobile .login-form input:focus + label {
+  left: 0;
+  top: -14px;
+  font-size: 11px;
+  font-weight: 500;
+}
+#giris-mobile .login-form input:not(:placeholder-shown) + label {
+  left: 0;
+  top: -14px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+#giris-mobile .login-form .forget-password-link {
+  margin-top: 16.5px;
+  color: #FFD982;
+  font-size: 14px;
+  font-family: "sofiapro-medium";
+}
+#giris-mobile .btn-e-posta {
+  margin-top: 14px;
+  background-color: #D19E2C;
+  color: #fff;
+}
+#giris-mobile .btn-e-posta .fa-envelope {
+  color: #fff;
+  font-size: 18px;
+}
+#giris-mobile .login-form .login-tooltip {
+  margin-top: 11.6px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-family: "sofiapro-medium";
+  margin-top: 10px;
+}
+#giris-mobile .login-form .login-tooltip span {
+  color: #f5ca68;
+  cursor: pointer;
+}
+
+#giris-mobile .hr {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+#giris-mobile .hr::before, #giris-mobile .hr::after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #fff;
+  margin: auto;
+}
+#giris-mobile .hr::before {
+  margin-right: 6px;
+}
+#giris-mobile .hr::after {
+  margin-left: 6px;
+}
+#giris-mobile .hr span {
+  color: #fff;
+  font-family: "sofiapro-bold";
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+
+#giris-mobile .btn-groups {
+  display: flex;
+
+}
+#giris-mobile .facebook-login,  .google-login {
+  flex: 1;
+}
+
+#giris-mobile .btn-facebook {
+  background: #475a96;
+  color: #fff;
+}
+#giris-mobile .btn img.icon {
+  height: 24px;
+  margin-right: 10px;
+  
+}
+
+#giris-mobile .btn-google {
+  background: #fff;
+  color: rgb(87, 86, 86);
+  font-weight: 600;
+}
+#giris-mobile .or-login-exp {
+  color: #f3ecec;
+  font-family: "sofiapro-medium";
+  text-align: center;
+  font-family: 14px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}

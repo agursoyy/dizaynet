@@ -1,0 +1,213 @@
+#kayit-mobile {
+  position: fixed;
+  width: 100%;
+  z-index: 10000000;
+  height: calc(100vh + 160px);
+  overflow: hidden;
+  background: url('../images/loginbanner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#kayit-mobile .wrapper {
+  width: 100%;
+  height: 100vh;  /*-webkit-fill-available;*/
+
+  overflow-y: scroll;
+  -webkit-overflow-y: scroll; /* added css prefix for safari */
+  -webkit-overflow-scrolling: touch;
+
+}
+#kayit-mobile .wrapper .container {
+  /* this one is not flex like the two others */
+}
+
+
+
+
+#kayit-mobile .close-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
+#kayit-mobile .close-link img {
+  height: 18px;
+}
+#kayit-mobile .page-text{
+  margin-top: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+#kayit-mobile .page-text .title{
+  font-size: 24px;
+  font-family: "sofiapro-medium";
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+#kayit-mobile .page-text .subtitle{
+  font-size: 14px;
+  font-family: "sofiapro-light";
+  color: #ffffff;
+}
+#kayit-mobile .signup-form .user-type-wrapper {
+  margin-bottom: 16px;
+}
+#kayit-mobile .signup-form .user-type-wrapper .form-check img {
+  height: 25px;
+}
+#kayit-mobile .signup-form .user-type-wrapper label.checkbox {
+  color: #fff;
+  font-size: 16px;
+  font-family: "sofiapro-medium";
+  margin-bottom: 6px;
+}
+#kayit-mobile .signup-form .form-group {
+  position: relative;
+}
+#kayit-mobile .signup-form label {
+  color: #ffffff;
+  font-family: "sofiapro-light";
+  font-size: 16px;
+}
+#kayit-mobile .signup-form label:not(.checkbox) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.2s ease-in;
+}
+
+#kayit-mobile .signup-form input {
+  border: none;
+  background-color: transparent !important;
+  border-radius: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  z-index: 1;
+  padding-left: 0;
+   display: inline-block;
+  position: relative;
+  background: none;
+}
+
+#kayit-mobile .signup-form .form-group:not(:last-child) {
+  margin-bottom: 30px;
+}
+#kayit-mobile .signup-form input:focus {
+  box-shadow: none !important;
+}
+#kayit-mobile .signup-form input:focus + label {
+  left: 0;
+  top: -14px;
+  font-size: 11px;
+  font-weight: 500;
+}
+#kayit-mobile .signup-form input:not(:placeholder-shown) + label {
+  left: 0;
+  top: -14px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+#kayit-mobile .signup-form label.checkbox {
+  color: #fff;
+  font-size: 10px;
+  font-family: "sofiapro-light";
+  display: inline;
+}
+#kayit-mobile .signup-form label.checkbox  a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+#kayit-mobile .signup-form .forget-password-link {
+  margin-top: 16.5px;
+  color: #FFD982;
+  font-size: 14px;
+  font-family: "sofiapro-medium";
+}
+#kayit-mobile .btn-e-posta {
+  margin-top: 14px;
+  background-color: #D19E2C;
+  color: #fff;
+}
+#kayit-mobile .btn-e-posta .fa-envelope {
+  color: #fff;
+  font-size: 18px;
+}
+#kayit-mobile .signup-form .login-tooltip {
+  margin-top: 11.6px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-family: "sofiapro-medium";
+  margin-top: 10px;
+}
+#kayit-mobile .signup-form .login-tooltip span {
+  cursor: pointer;
+  color: #f5ca68;
+}
+
+#kayit-mobile .hr {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+#kayit-mobile .btn {
+  height: 45px;
+}
+
+#kayit-mobile .hr::before, #kayit-mobile .hr::after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #fff;
+  margin: auto;
+}
+#kayit-mobile .hr::before {
+  margin-right: 6px;
+}
+#kayit-mobile .hr::after {
+  margin-left: 6px;
+}
+#kayit-mobile .hr span {
+  color: #fff;
+  font-family: "sofiapro-bold";
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+
+#kayit-mobile .btn-groups {
+  display: flex;
+
+}
+#kayit-mobile .facebook-login,  .google-login {
+  flex: 1;
+}
+
+#kayit-mobile .btn-facebook {
+  background: #475a96;
+  color: #fff;
+}
+#kayit-mobile .btn img.icon {
+  height: 24px;
+  margin-right: 10px;
+  
+}
+
+#kayit-mobile .btn-google {
+  background: #fff;
+  color: rgb(87, 86, 86);
+  font-weight: 600;
+}
+#kayit-mobile .or-login-exp {
+  color: #f3ecec;
+  font-family: "sofiapro-medium";
+  text-align: center;
+  font-family: 14px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}

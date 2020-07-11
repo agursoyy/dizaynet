@@ -1,0 +1,108 @@
+
+body {
+   /* font-family: 'sofiapro-light' !important;*/
+}  
+
+
+.big-media span {
+    font-weight: bold;
+    color: #fff;
+    background-color: #D19E2C;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.cropper-div {
+    overflow: hidden;
+    display: block;
+}
+
+
+#editor {
+    height: 200px;
+}
+
+.hl-checkboxes {
+    align-items: flex-start;
+}
+
+.hl-container {
+    font-size: 14px;
+    width: 23%;
+    line-height: 19px;
+}
+
+
+.profil-foto-onizleme {
+    width: 100%;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 365px;
+}
+
+
+.modal-title {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+.close {
+    display: none;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 10px 10px 0;
+}
+
+#image_demo {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-footer button {
+    padding: 8px 20px;
+    margin-right: 10px;
+}
+
+.modal-footer button:first-child {
+    border: 1px solid #dbdbdb;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.modal-footer button:last-child {
+    background-color: #D19E2C;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .hl-container {
+        font-size: 14px;
+        width: 45% !important;
+    }
+
+    .modal-content {
+        width: 80%;
+        height: 500px !important;
+    }
+
+}
+
+
+
+

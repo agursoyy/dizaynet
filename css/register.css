@@ -1,0 +1,83 @@
+
+
+
+.r-big-media {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #8d8d8d;
+	border-style: dashed;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.r-big-media > p {
+	font-size: 16px !important;
+}
+.r-custom-input {
+	color: transparent;
+	width: 100%;
+	padding-left: 40%;
+}
+.r-custom-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+
+.r-custom-input::before {
+	content: 'Fotoğraf Seç';
+	width: 110px;
+	height: 28px;
+	border: 2px solid #222222;
+	background: none;
+	color: black;
+	border-radius: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: pre-wrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-size: 15px;
+}
+.r-custom-input:hover::before {
+	border-color: black;
+}
+.r-custom-input:active {
+	outline: 0;
+}
+.r-custom-input:active::before {
+	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+
+.media-title-p {
+	font-family: 'nunito-bold';
+	margin: 5px 0;
+}
+
+
+.conditions {
+	margin: 5px;
+}
+
+.conditions .login-container a {
+	text-decoration: underline !important;
+	color: #363237;
+}
+
+
+@media only screen and (max-width: 500px) {
+	.r-custom-input {
+		color: transparent;
+		width: 100%;
+		padding-left: 25%;
+	}
+	.r-big-media > p {
+		font-size: 16px !important;
+		text-align: center;
+	}
+}

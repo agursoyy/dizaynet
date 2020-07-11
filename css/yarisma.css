@@ -1,0 +1,291 @@
+.card-img-tasarim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .main-img-yarisma-page {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .main-img-yarisma-page {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .main-img-yarisma-page {
+    height: 270px !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .design-competition-tasarim .card-container-tasarim .card-tasarim .card-img-tasarim .main-img-yarisma-page {
+    height: 310px !important;
+  }
+}
+
+
+.card-img-overlay-tasarim {
+  height: 50%;
+  bottom: 0 !important;
+  display: flex !important;
+  padding-left: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.card-img-overlay-tasarim p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-img-overlay-tasarim > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.timer .counter {
+  display: flex;
+  align-items: center;
+}
+
+.timer .counter span {
+  width: 23px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #272726;
+  border: 1px solid #d19e2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-family: "sofiapro-light";
+  color: #fff;
+  margin: 0 3px;
+}
+
+.timer .counter-info {
+  width: 150px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer .counter-info p {
+  font-family: "sofiapro-light";
+  font-size: 10px;
+  color: #7b7b7b;
+  margin-top: 3px;
+}
+
+.sonuclanan-yarisma {
+  width: 90%;
+  margin: 30px auto;
+  height: 500px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.sonuclanan-yarisma .sonuc-box {
+  width: 400px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-img-box {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-img-box img {
+  width: 100%;
+  height: 300px;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-img-box .sonuc-img-overlay {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  background: -moz-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 0.76) 0%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 0.76) 0%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.76) 0%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  padding-left: 26px;
+  padding-bottom: 16px;
+}
+
+/*
+.sonuclanan-yarisma .sonuc-box .sonuc-img-box:hover .sonuc-img-overlay {
+	display: flex;
+}
+*/
+
+.sonuclanan-yarisma .sonuc-box .sonuc-img-box .sonuc-img-overlay span {
+  font-size: 12px;
+  font-family: "sofiapro-light";
+  font-weight: lighter;
+  color: #ffd982;
+  margin-left: 5px;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-img-box .sonuc-img-overlay a {
+  font-size: 16px;
+  font-family: "sofiapro-light";
+  color: #fff;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info {
+  width: 100%;
+  min-height: 90px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #fff;
+  display: flex;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-user-img {
+  flex: 1;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-user-img img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #d19e2c;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.53);
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-user {
+  flex: 3;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 7px 5px;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-user p {
+  font-family: "sofiapro-light";
+  font-size: 13px;
+  color: #3a3a39;
+  margin-bottom: 0 !important;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-user a {
+  font-family: "sofiapro-light";
+  font-size: 16px;
+  font-weight: bold;
+  color: #363732;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-user span {
+  font-family: "sofiapro-light";
+  font-size: 11px;
+  color: #6b6a6a;
+}
+
+.rate-stars {
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+}
+
+.rate-stars p {
+  font-size: 10px;
+  color: #5a5a5a;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.fa-star {
+  color: #cfcfcf;
+  font-size: 9px;
+  margin-right: 2px;
+}
+
+.checked-star {
+  color: #d19e2c;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-award {
+  flex: 2;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-award span {
+  font-size: 22px;
+  font-family: "sofiapro-light";
+  color: #3a3a39;
+  margin-left: auto;
+}
+
+.sonuclanan-yarisma .sonuc-box .sonuc-info .sonuc-award p {
+  font-size: 11px;
+  font-family: "sofiapro-light";
+  color: #6b6a6a;
+  margin-top: 10px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 550px) {
+  .timer .counter span {
+    width: 28px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: #272726;
+    border: 1px solid #d19e2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "sofiapro-light";
+    color: #fff;
+    margin: 0 3px;
+  }
+}
+

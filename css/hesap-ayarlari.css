@@ -1,0 +1,239 @@
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh;
+  font-family: "sofiapro-light" !important;
+  background-color: #fff;
+}
+
+section.forget-pass {
+  width: 100%;
+  margin: 50px auto;
+  max-height: 900px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.forget-pass form {
+  width: 440px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.forget-pass form h1 {
+  font-size: 36px;
+  color: #363732;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+section.forget-pass form p {
+  color: #d19e2c;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section.forget-pass form label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+section.forget-pass form label > span {
+  font-size: 12px;
+  color: #363732;
+  font-weight: lighter;
+}
+
+section.forget-pass form label > input {
+  border: none;
+  background: none;
+  height: 30px;
+  border-bottom: 1.5px solid #8c8c8c;
+  color: #363732;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+section.forget-pass form label > input:focus {
+  transition: 0.3s;
+  border-bottom: 1.5px solid #aa7c13;
+}
+
+section.forget-pass form > a {
+  width: 230px;
+  height: 40px;
+  border-radius: 40px;
+  border: 2px solid #aa7c13;
+  color: #aa7c13;
+  letter-spacing: 1px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.form-buttons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons a {
+  flex: 1;
+  text-align: center;
+  line-height: 33px;
+  margin-right: 30px;
+  height: 35px;
+  border: 2px solid #8c8c8c;
+  background: none;
+  border-radius: 35px;
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "sofiapro-light";
+}
+
+.form-buttons button {
+  cursor: pointer;
+  flex: 1;
+  height: 35px;
+  border: 2px solid #aa7c13;
+  background: none;
+  border-radius: 35px;
+  color: #aa7c13;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "sofiapro-light";
+}
+
+.form-buttons button:hover {
+  transition: 0.3s;
+  background-color: #aa7c13;
+  color: #fff;
+}
+
+.form-buttons a:hover {
+  transition: 0.3s;
+  background-color: #8c8c8c;
+  color: #fff;
+}
+
+section.forget-pass form > span {
+  font-size: 15px;
+  color: #363732;
+}
+
+section.forget-pass form > span > a {
+  color: #aa7c13;
+}
+
+.success-alert {
+  width: 260px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #d19e2c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+footer {
+  margin-top: auto !important;
+}
+
+.select-box {
+  position: relative;
+}
+
+.select-box .down {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  right: 10px;
+  color: #8d8d8d;
+}
+.select-box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 100%;
+  line-height: 30px;
+  order: 1;
+  height: 30px;
+  border-bottom: 1.5px solid #8c8c8c;
+  font-style: normal;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background: none;
+  color: #363732;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 500px) {
+  section.forget-pass {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.forget-pass form {
+    width: 94%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.forget-pass form label {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  section.forget-pass form h1 {
+    font-size: 30px;
+    color: #363732;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  section.forget-pass form p {
+    color: #d19e2c;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  section.forget-pass form > a {
+    width: 230px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #aa7c13;
+    color: #aa7c13;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: none;
+  }
+}

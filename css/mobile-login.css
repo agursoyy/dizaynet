@@ -1,0 +1,137 @@
+#mobile-login {
+  position: fixed;
+  width: 100%;
+  z-index: 10000000;
+  height: calc(100vh + 160px);
+  overflow: hidden;
+  background: url('../images/loginbanner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mobile-login .wrapper {
+  width: 100%;
+  height: 100vh;  /*-webkit-fill-available;*/
+  overflow-y: scroll;
+}
+#mobile-login .wrapper .container {
+
+}
+#mobile-login .close-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
+#mobile-login .close-link img {
+  height: 18px;
+}
+#mobile-login .logo {
+  margin-top: 60px;
+  margin-bottom: 24px;
+ /* display: flex;
+  justify-content: center;*/
+  text-align: center;
+  color: #fff;
+  font-size: 43px;
+  font-family: "sofiapro-medium";
+}
+#mobile-login .logo span {
+  color: #ffd982;
+}
+/*
+#mobile-login .logo img {
+  height: 60px;
+  margin-left: 16px;
+}*/
+
+#mobile-login .page-text {
+  color: #fff;
+  font-family: "sofiapro-medium";
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+#mobile-login .login .btn:focus{
+  box-shadow: none !important;
+}
+#mobile-login .login .btn {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  font-family: "sofiapro-light";
+}
+#mobile-login .login .btn .svg-inline--fa {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#mobile-login .login .btn-e-posta {
+  background-color: #d19e2c;
+}
+
+#mobile-login .login .hr {
+  text-align: center;
+  margin: 8px 0;
+}
+#mobile-login .login .hr span {
+  color: #fff;
+  font-family: "sofiapro-bold";
+  font-size: 15px;
+}
+
+
+
+#mobile-login .login .facebook-login,  .google-login {
+  flex: 1;
+}
+
+#mobile-login .login .btn-facebook {
+  background: #475a96;
+}
+#mobile-login .login .btn img.icon {
+  height: 18px;
+  margin-right: 10px;
+  
+}
+
+#mobile-login .login .btn-google {
+  background: #fff;
+  color: rgb(87, 86, 86);
+  font-weight: 600;
+}
+
+
+#mobile-login  .login-rights-exp {
+  color: #f5f0f0;
+  font-size: 10px;
+  font-family: "sofiapro-light";
+  text-align: center;
+  margin-top: 14px;
+}
+#mobile-login .login-rights-exp a {
+  color: #FFD982;
+  text-decoration: underline;
+}
+#mobile-login .signup {
+  position: fixed;
+  width: 100%;
+  left: 0; right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+#mobile-login .signup .register-btn {
+  margin-top: 10px;
+}
+#mobile-login .signup .register-btn .btn {
+  border-radius: 0;
+  padding: 10px 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .3)
+}
+

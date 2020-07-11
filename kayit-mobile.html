@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dizaynet</title>
+  <meta charset="utf-8">
+  <meta name="csrf-token" content="WkuURkyBdEWA0uOa1oM9wa9VennIz61ph7v1p6GO">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/tasarim.css">
+  <link rel="stylesheet" type="text/css" href="./css/kayit-mobile.css">
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/23a4359d6e.js"></script>
+
+</head>
+
+<body>
+  <div id="kayit-mobile" class="signup-mobile-cont d-lg-none">
+    <a class="btn btn-link close-link" onclick="goBack()"><img src="./icons/auth-close.svg" alt="close" /></a>
+    <div class="container">
+      <div class="page-text">
+        <div class="title">Kayıt Ol</div>
+        <div class="subtitle">Devam etmek için lütfen bilgilerinizi giriniz.</div>
+      </div>
+      <form class="signup-form">
+        <div class="user-type-wrapper d-flex">
+          <div class="form-check w-50 d-flex flex-column align-items-center">
+            <img src="./icons/architect.svg" />
+            <label class="form-check-label checkbox" for="exampleRadios1">
+              Profesyonel
+            </label>
+            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          </div>
+          <div class="form-check w-50 d-flex flex-column align-items-center">
+            <img src="./icons/owner.svg" />
+            <label class="form-check-label checkbox" for="exampleRadios2">
+              Ev Sahibi
+            </label>
+            <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <input type="text" name="fname_lname" required class="form-control">
+          <label>Ad Soyad</label>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" required class="form-control">
+          <label>E-Posta</label>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" required class="form-control">
+          <label>Şifre</label>
+        </div>
+        <div class="form-group checkbox">
+          <input clas type="checkbox" required />
+          <label class="checkbox"><a href="#">Hüküm koşullar</a> ve <a href="#">gizlilik politikasını</a> kabul
+            ediyorum</label>
+        </div>
+        <a class="forget-password-link" href="#">Şifremi Unuttum</a>
+        <div class="e-posta-login">
+          <button class="btn btn-block btn-e-posta"><i class="fa fa-envelope mr-3"></i>Kayıt Ol</button>
+        </div>
+        <div class="login-tooltip">
+          Hesabınız var mı? <span>Giriş Yap</span>
+        </div>
+      </form>
+      <div class="hr">
+        <span>Veya</span>
+      </div>
+      <div class="btn-groups d-flex">
+        <div class="facebook-login flex-1 pr-1">
+          <button class="btn btn-block btn-facebook "><img src="./icons/facebook.svg" class="icon">Facebook</button>
+        </div>
+        <div class="google-login flex-1 pl-1">
+          <button class="btn btn-block btn-google "><img src="./icons/google.svg" class="icon">Google</button>
+        </div>
+      </div>
+      <p class="or-login-exp">
+        ile hızlı giriş yapın
+      </p>
+
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    const goBack = () => {
+      console.log('goBack');
+    }
+
+
+    $(document).ready(() => {
+      // when dom is ready.
+
+    })
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,684 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+section.hero-image .image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image-overlay p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: var(--light);
+}
+
+
+section.yarisma-ekle {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+section.yarisma-ekle .form-nav {
+    width: 325px;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-right: 1px solid #eee;
+}
+
+section.yarisma-ekle .form-nav nav {
+    display: flex;
+    flex-direction: column;
+}
+
+section.yarisma-ekle .form-nav nav a {
+    margin-bottom: 20px;
+    color: #8d8d8d;
+    font-family: 'nunito-bold';
+    padding: 5px 30px 5px 0;
+    border-right: 4px solid #fff;
+}
+
+section.yarisma-ekle .form-nav nav a:hover {
+    border-right: 4px solid #D19E2C;
+    color: #2d2d2d;
+    transition: .3s;
+}
+
+section.yarisma-ekle .form-nav nav a.active-nav {
+    border-right: 4px solid #D19E2C;
+    color: #2d2d2d;
+}
+
+section.yarisma-ekle .form-nav nav.mobile-nav {
+    display: none;
+}
+
+
+section.yarisma-ekle form {
+    width: 800px;
+    height: 1000px;
+    margin-left: 385px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.yarisma-ekle form > h1 {
+    font-size: 28px;
+    color: #2d2d2d;
+    font-family: 'sofiapro-light';
+    font-weight: bold;
+    min-height: auto !important;
+    margin-bottom: 0 !important;
+}
+
+
+section.yarisma-ekle form > p {
+    font-size: 16px;
+    color: #2d2d2d;
+    margin-top: 10px;
+    font-family: 'sofiapro-light';
+    margin-bottom: 30px;
+}
+
+
+section.yarisma-ekle form .form-box {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+section.yarisma-ekle form .form-box .form-section p {
+    font-size: 14px;
+    color: #2d2d2d;
+    font-family: 'sofiapro-light';
+    margin-bottom: 30px;
+}
+
+section.yarisma-ekle form .form-box .form-section h3 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'sofiapro-medium';
+    color: #8d8d8d;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #d19e2d;
+}
+
+section.yarisma-ekle form .form-box .form-section .el {
+    margin-bottom: 25px;
+}
+
+section.yarisma-ekle form .form-box .form-section .el p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #868585;
+    margin-bottom: 8px;
+    font-family: 'sofiapro-medium';
+}
+
+section.yarisma-ekle form .form-box .form-section .el input[type="text"], input[type="main"] {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    order: 1;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+    border-bottom: 2px solid #2d2d2d;
+    font-style: normal;
+    padding: 0 0 6px;
+    width: 100%;
+    box-shadow: inherit;
+    background-image: initial;
+}
+
+section.yarisma-ekle form .form-box .form-section .el textarea {
+    width: 100%;
+    height: 190px;
+    resize: none;
+    outline: 0;
+    font-style: normal;
+    padding: 15px;
+    border: 1.5px solid #2d2d2d;
+    border-radius: 3px;
+    box-shadow: inherit;
+    background-image: initial;
+}
+
+section.yarisma-ekle form .form-box .form-section .el input {
+    font-family: 'nunito-regular';
+    font-size: 15px;
+}
+
+
+section.yarisma-ekle form .form-box .form-section .el textarea::placeholder {
+    font-family: 'nunito-regular';
+    font-size: 15px;
+}
+
+
+.ic-mimari {
+    display: none;
+}
+
+
+section.yarisma-ekle form .form-box .form-section .el .select-box {
+    position: relative;
+}
+
+section.yarisma-ekle form .form-box .form-section .el .select-box .down {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #8d8d8d;
+}
+
+section.yarisma-ekle form .form-box .form-section .el .select-box select {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    order: 1;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+    border-bottom: 2px solid #2d2d2d;
+    font-style: normal;
+    padding: 0 0 6px;
+    width: 100%;
+    box-shadow: inherit;
+    background-image: initial;
+
+}
+
+.hl-checkboxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.hl-container {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 25%;
+}
+
+/* Hide the browser's default checkbox */
+.hl-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.hl-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.hl-container:hover input ~ .hl-checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.hl-container input:checked ~ .hl-checkmark {
+    background-color: #d19e2c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.hl-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.hl-container input:checked ~ .hl-checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.hl-container .hl-checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+section.yarisma-ekle form .form-box .form-section .multiple-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.yarisma-ekle form .form-box .form-section .multiple-inputs .el {
+    flex: 1;
+}
+
+section.yarisma-ekle form .form-box .form-section .multiple-inputs .el:first-child {
+    margin-right: 20px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+}
+
+
+/* custom file input */
+
+
+.custom-file-input {
+    color: transparent;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'DosyalarÃƒÆ’Ã¢â‚¬Å¾Ãƒâ€šÃ‚Â± seÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§mek iÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§in tÃƒÆ’Ã¢â‚¬Å¾Ãƒâ€šÃ‚Â±klayÃƒÆ’Ã¢â‚¬Å¾Ãƒâ€šÃ‚Â±n';
+    width: 150px;
+    height: 150px;
+    border: 1px solid #8d8d8d;
+    border-style: dashed;
+    background-color: #f9f9f9;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-wrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+.custom-file-input:hover::before {
+    border-color: black;
+}
+
+.custom-file-input:active {
+    outline: 0;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+
+.big-media {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #8d8d8d;
+    border-style: dashed;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.big-media > p {
+    font-size: 45px !important;
+    color: #AA7C13;
+}
+
+
+.custom-input {
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.custom-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.big-media:hover p {
+    transition: .3s;
+    color: #AA7C13 !important;
+}
+
+.custom-input:active {
+    outline: 0;
+}
+
+
+form .submit-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form .submit-btn button {
+    width: 100px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #D19E2C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form .submit-btn button:hover {
+    border: 2px solid #D19E2C;
+    background: none;
+    color: #D19E2C;
+    transition: .3s ease;
+}
+
+.nav-fa {
+    display: none;
+}
+
+.add-people-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    background: #D19E2C;
+    color: #fff;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.added-persons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.added-persons .person {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: 'sofiapro-light';
+}
+
+.added-persons .person span {
+    color: #dd2c00;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    section.yarisma-ekle .form-nav {
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-right: 1px solid #eee;
+    }
+
+    section.yarisma-ekle form {
+        width: 700px;
+        height: 1000px;
+        margin-left: 170px;
+        margin-right: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 720px) {
+    section.yarisma-ekle .form-nav {
+        width: 50px;
+        height: 100%;
+        position: fixed;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-right: 1px solid #eee;
+    }
+
+    section.yarisma-ekle .form-nav nav#desktop-nav p {
+        display: none;
+    }
+
+    .nav-fa {
+        display: block;
+    }
+
+    section.yarisma-ekle .form-nav nav a {
+        margin-bottom: 20px;
+        color: #8d8d8d;
+        font-family: 'nunito-bold';
+        padding: 5px 12px 3px 0;
+        border-right: 4px solid #fff;
+    }
+
+    section.yarisma-ekle form {
+        width: 345px;
+        height: auto;
+        margin-left: 60px;
+    }
+
+    .hl-checkboxes {
+        justify-content: space-between;
+    }
+
+    .hl-container {
+        margin: 5px;
+        width: auto;
+        flex: 1;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1920px) {
+
+    section.yarisma-ekle {
+        width: 90%;
+        margin: 0 auto;
+        padding-left: calc((100vw - 1920px) / 2);
+        padding-right: calc((100vw - 1920px) / 2);
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1250px) {
+
+    section.yarisma-ekle .form-nav {
+        width: 400px;
+        height: 100%;
+        position: fixed;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-right: 1px solid #eee;
+    }
+
+    section.yarisma-ekle form {
+        width: 600px;
+        height: auto;
+        margin-left: 450px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+
+    section.yarisma-ekle .form-nav {
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-right: 1px solid #eee;
+    }
+
+    section.yarisma-ekle form {
+        width: 500px;
+        height: auto;
+        margin-left: 350px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 720px) and (max-width: 900px) {
+
+    section.yarisma-ekle .form-nav {
+        width: 150px;
+        height: 100%;
+        position: fixed;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-right: 1px solid #eee;
+    }
+
+    section.yarisma-ekle form {
+        width: 500px;
+        height: auto;
+        margin-left: 200px;
+    }
+
+
+}
+
+#draws {
+    position: relative;
+}
+
+/*
+.checkboxes .draw-btn  {
+    border-bottom: 2px solid #2d2d2d;
+    border-radius: 0;
+}
+.checkboxes .draw-btn span {
+    color: rgba(191, 191, 191, 0.87);
+}
+.form-section .checkboxes-container {
+    display: none;
+    padding: 10px 30px 10px 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px rgb(184, 182, 182);
+    box-shadow: 0 0 10px rgb(184, 182, 182);
+    height: 100px;
+    overflow-y: auto;
+    border-radius: 6px;
+}
+.checkboxes-container .draw-icon {
+ height: 16px;
+ margin-right: 2px;
+ margin-bottom: 6px;
+}
+.checkboxes-contaner input {
+    margin-bottom: 60px;
+    
+}
+.checkboxes .btn-link {
+    font-size: 14px;
+    color: #2d2d2d;
+    font-family: 'sofiapro-light';
+    margin-bottom: 12px;
+} */
+
+section.yarisma-ekle form .form-box .form-section .el .select-box .ui.selection.dropdown {
+    border: none;
+    border-bottom: 2px solid #2d2d2d;
+    border-radius: 0;
+    width: 100%;
+    padding-left: 0;
+}   
+
+.ui.selection.active.dropdown .menu {
+    border-color: rgba(191, 191, 191, 0.87) !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(191, 191, 191, 0.87);
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(191, 191, 191, 0.87);
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: rgba(191, 191, 191, 0.87);
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: rgba(191, 191, 191, 0.87);
+  }

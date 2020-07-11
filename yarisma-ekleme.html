@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dogan Hazar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/yarisma-ekleme.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile-bottom-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/searchbox.css">
+	<script src="./js/searchbox.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/semantic-ui/semantic.css">
+	<script src="./js/semantic.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<ul class="hex-area">
+		<li class="hex1"></li>
+		<li class="hex2"></li>
+		<li class="hex3"></li>
+		<li class="hex4"></li>
+		<li class="hex5"></li>
+		<li class="hex6"></li>
+	</ul>
+
+	<header>
+		<div onclick="openMobileMenu()" class="hamburger-menu d-none">
+			<button><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="logo">
+			<h1><a href="index.html">dizay<span>n</span>et</a></h1>
+		</div>
+
+		<div class="mobile-search">
+			<button class="btn btn-link search-btn"><i class="fa fa-search"></i></button>
+		</div>
+		<div class="search-bar">
+			<button><i class="fa fa-search"></i></button>
+			<input type="text" name="" class="input-text" placeholder="Eviniz için tasarım fikirleri bulun...">
+			<div class="search-list">
+				<div class="item">
+					<img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+					<a href="#ahah" class="item-text">
+						Abs..
+					</a>
+				</div>
+				<div class="item">
+					<img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+					<a href="#ahah" class="item-text">
+						abc
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="search-box">
+			<div class="search-box-input">
+				<i class="fa fa-search  search-icon-checked"></i>
+				<input type="text" name="input-text-mobile" class="input-text-mobile" placeholder="Ara..." />
+				<button class="close-btn btn btn-link" onclick="">
+					<img class="icon" src="./icons/close.svg" alt="search-icon" />
+				</button>
+			</div>
+			<div class="search-list">
+				<div class="item">
+					<img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+					<a class="item-link" href="#">
+						Abs..
+					</a>
+				</div>
+				<div class="item">
+					<img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+					<a class="item-link" href="#">
+						Abs..
+					</a>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<a href="tasarim.html">Dizayn</a>
+			<a href="profesyoneller.html">Profesyoneller</a>
+			<a href="yarisma.html">Yarışmalar</a>
+			<a href="blog.html">Blog</a>
+		</nav>
+		<div class="login-btn">
+			<a onclick="openLogin()">Giriş Yap</a>
+		</div>
+
+	</header>
+
+
+	<!--
+	<section class="hero-image">
+		<img src="images/yarismaekle.jpg">
+		<div class="image-overlay">
+			<h1>Bize İhtiyacınızdan Bahsedin</h1>
+			<p>Profesyonellerle hemen iletişime geçin. Profilleri, yorumları ve portföyleri <br> görüntüleyin. Teklifleri beğendiğiniz takdirde satın alın
+			</p>
+		</div>
+	</section>
+-->
+
+
+
+	<section class="yarisma-ekle">
+		<div class="form-nav">
+			<nav id="desktop-nav">
+				<a href="yarisma-ekleme.html#general" class="active-nav nav_btn"><span class="nav-fa"><i
+							class="fa fa-cog"></i></span>
+					<p>Proje Özeti</p>
+				</a>
+				<a href="yarisma-ekleme.html#highlights" class="nav_btn"><span class="nav-fa"><i class="fa fa-tag"></i></span>
+					<p>Etiketler</p>
+				</a>
+				<a href="yarisma-ekleme.html#draws" class="nav_btn"><span class="nav-fa"><i class="fa fa-tag"></i></span>
+					<p>Çizimler</p>
+				</a>
+				<a href="yarisma-ekleme.html#location" class="nav_btn"><span class="nav-fa"><i
+							class="fa fa-map-marker-alt"></i></span>
+					<p>Lokasyon</p>
+				</a>
+				<a href="yarisma-ekleme.html#contact" class="nav_btn"><span class="nav-fa"><i class="fa fa-phone"></i></span>
+					<p>İletişim</p>
+				</a>
+				<a href="yarisma-ekleme.html#media" class="nav_btn"><span class="nav-fa"><i class="fa fa-image"></i></span>
+					<p>Media</p>
+				</a>
+				<a href="yarisma-ekleme.html#davet" class="nav_btn"><span class="nav-fa"><i class="fa fa-receipt"></i></span>
+					<p>Davet</p>
+				</a>
+				<a href="yarisma-ekleme.html#odul" class="nav_btn"><span class="nav-fa"><i class="fa fa-award"></i></span>
+					<p>Proje Ödülü</p>
+				</a>
+			</nav>
+		</div>
+
+
+		<form method="POST" action="">
+			<h1>Bize İhtiyacınızdan Bahsedin.</h1>
+			<p style="display: block;">Hayalinizdeki ev veya ofis için kolay, hızlı ve bütçenize uygun onlarca tasarım edinin.
+			</p>
+
+			<div class="form-box scrollspy" id="general">
+				<div class="form-section">
+					<h3>PROJE ÖZETİ</h3>
+					<p>Projeniz hakkında vereceğiniz tüm detaylar, tasarımcıların beklentilerinizi karşılamasını
+						kolaylaştıracaktır.</p>
+					<div class="el">
+						<p>Proje İsmi</p>
+						<input type="text" name="" placeholder="Projenin adı">
+					</div>
+
+					<div class="el">
+						<p>Tür</p>
+						<div class="select-box">
+							<div class="ui selection dropdown">
+								<input type="hidden" name="tür">
+								<i class="dropdown icon"></i>
+								<div class="default text">Tür</div>
+								<div class="menu">
+									<div class="item" data-value="1">Mimari</div>
+									<div class="item" data-value="0">İç Mimari</div>
+									<div class="item" data-value="0">Peyzaj</div>
+									<div class="item" data-value="0">Endüstriyel Tasarim</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="el">
+						<p>Alt Başlık</p>
+						<div class="select-box" id="mimari">
+							<div class="ui selection dropdown">
+								<input type="hidden" name="mimari">
+								<i class="dropdown icon"></i>
+								<div class="default text">Alt Başlık</div>
+								<div class="menu">
+									<div class="item" data-value="mimari">Mimari</div>
+									<div class="item" data-value="mimari">Mimari</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="select-box ic-mimari" id="ic-mimari">
+
+							<div class="ui selection dropdown">
+								<input type="hidden" name="ic-mimari">
+								<i class="dropdown icon"></i>
+								<div class="default text">Alt Başlık</div>
+								<div class="menu">
+									<div class="item" data-value="mutfak">Mutfak</div>
+									<div class="item" data-value="oturma odasi">Oturma Odası</div>
+									<div class="item" data-value="salon">Salon</div>
+									<div class="item" data-value="yatak odası">Yatak Odası</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="select-box ic-mimari" id="peyzaj">
+							<select class="first">
+								<option>Bahçe</option>
+								<option>Park</option>
+								<option>Kampüs</option>
+							</select>
+							<div class="down">
+								<i class="fa fa-chevron-down"></i>
+							</div>
+						</div>
+
+						<div class="select-box ic-mimari" id="endustriyel">
+							<select class="first">
+								<option>Yemek Takımı</option>
+								<option>Oturma Grubu</option>
+								<option>Sandalye</option>
+								<option>Masa</option>
+							</select>
+							<div class="down">
+								<i class="fa fa-chevron-down"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="el">
+						<p>Alan</p>
+						<div class="select-box">
+							<div class="ui selection dropdown">
+								<input type="hidden" name="ic-mimari">
+								<i class="dropdown icon"></i>
+								<div class="default text">Alt Başlık</div>
+								<div class="menu">
+									<div class="item" data-value="modern">Modern</div>
+									<div class="item" data-value="geleneksel">Geleneksel</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="el">
+						<p>Proje Tanımı</p>
+						<textarea placeholder="Hayalinizdeki projeyi burada anlatın."></textarea>
+					</div>
+
+					<div class="el">
+						<p>Proje Hedefleriniz</p>
+						<textarea placeholder="Proje hedefleriniz.."></textarea>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="form-box scrollspy" id="highlights">
+				<div class="form-section">
+					<h3>ETİKETLER</h3>
+					<p>
+						Projenizi en iyi tanımlayacak etiketleri seçiniz
+					</p>
+					<!--
+					<div class="hl-checkboxes">
+						<label class="hl-container">Modern
+							<input type="checkbox" checked="checked">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Geleneksel
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Minimal
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Rustik
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+
+						<label class="hl-container">İskandinav
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Endüstriyel
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Kırsal
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Eklektik
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+					</div> !-->
+					<div class="el">
+						<div class="select-box">
+							<select name="etiketler" class="ui fluid search dropdown pl-0" multiple="">
+								<option value="">Modern</option>
+								<option value="angular">Geleneksel</option>
+								<option value="css">Minimal</option>
+								<option value="design">Rustik</option>
+								<option value="ember">İskandinav</option>
+								<option value="html">Endüstriyel</option>
+								<option value="design">Kırsal</option>
+								<option value="ember">Eklektik</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			</div>
+
+			<div class="form-box scrollspy" id="draws">
+				<div class="form-section">
+					<div>
+
+					</div>
+					<h3>ÇİZİMLER</h3>
+					<p>
+						Yarışma sonucunda profesyonellerden istediğiniz dökümanları ve çizimleri seçiniz
+					</p>
+					<!--
+					<div class="checkboxes">
+						<a class="pl-0 ml-0 btn btn-link d-flex justify-content-between align-items-center draw-btn"
+							onclick="openDrawingBox()">
+							<span>Projenizi en iyi tanımlayacak çizimleri seçiniz</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+
+						<div class="checkboxes-container">
+							<div class="form-group">
+								<label class="hl-container">
+									<img src="./icons/draw.svg" class="draw-icon" />
+									<input type="checkbox" checked="checked">
+									Modern
+									<span class="hl-checkmark"></span>
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="hl-container">
+									<img src="./icons/draw.svg" class="draw-icon" />
+									<input type="checkbox" checked="checked">
+									Modern
+									<span class="hl-checkmark"></span>
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="hl-container">
+									<img src="./icons/draw.svg" class="draw-icon" />
+									<input type="checkbox" checked="checked">
+									Modern
+									<span class="hl-checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="hl-checkboxes d-none">
+						<label class="hl-container">Modern
+							<input type="checkbox" checked="checked">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Geleneksel
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Minimal
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Rustik
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+
+						<label class="hl-container">İskandinav
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Endüstriyel
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Kırsal
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+						<label class="hl-container">Eklektik
+							<input type="checkbox">
+							<span class="hl-checkmark"></span>
+						</label>
+					</div>  !-->
+					<div class="el">
+						<div class="select-box">
+							<select name="çizimler" class="ui fluid search dropdown pl-0" multiple="">
+								<option value="">Çizim 1</option>
+								<option value="angular">Çizim 2</option>
+								<option value="css">Çizim 2</option>
+								<option value="design">Çizim 3</option>
+								<option value="ember">Çizim 4</option>
+								<option value="html">Çizim 5</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-box scrollspy" id="location">
+				<div class="form-section">
+					<h3>LOKASYON</h3>
+					<div class="el">
+						<p>Lokasyonunu Seçiniz</p>
+						<input id="search" type="text" placeholder="Şehir, Posta kodu" />
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="form-box scrollspy" id="contact">
+				<div class="form-section">
+					<h3>İLETİŞİM</h3>
+
+					<div class="el">
+						<p>Email</p>
+						<input type="text" name="" placeholder="Email adresiniz">
+					</div>
+					<div class="el">
+						<p>Telefon</p>
+						<input type="text" name="" placeholder="Telefon numaranız">
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="form-box scrollspy" id="media">
+				<div class="form-section">
+					<h3>PROJE FOTOĞRAFLARI</h3>
+					<p>Projenize ait çizimleri, fotoğrafları vb. yükleyiniz.</p>
+					<div class="el big-media">
+						<p><i class="fa fa-upload"></i></p>
+						<input type="file" class="custom-input" multiple>
+					</div>
+
+					<h3>İLHAM VEREN FOTOĞRAFLAR</h3>
+					<p>Hoşunuza giden ve projenize yön vermesini istediğiniz tasarımları profesyoneller ile paylaşın.</p>
+					<div class="el big-media">
+						<p><i class="fa fa-upload"></i></p>
+						<input type="file" class="custom-input" multiple>
+					</div>
+
+					<div class="el">
+						<p>Video(opsiyonel)</p>
+						<input type="text" name="" placeholder="Video URL">
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="form-box scrollspy" id="davet">
+				<div class="form-section">
+					<h3>DAVET</h3>
+					<p>Dizaynet'te gördüğünüz ve projenize davet etmek istediğiniz Profesyonellerin adını giriniz.</p>
+
+					<div class="el">
+						<input id="invite-input" type="text" placeholder="Kullanıcının adını girin">
+						<a type="button" onclick="getInputValue()" class="add-people-btn">Ekle</a>
+					</div>
+					<div id="added-persons" class="added-persons">
+						<!-- eklenen isimler buraya geliyor -->
+					</div>
+				</div>
+			</div>
+
+
+			<div class="form-box scrollspy" id="odul">
+				<div class="form-section">
+					<h3>PROJE ÖDÜLÜ</h3>
+					<p>Ödülünüz miktarı profesyonellerin projeye olan ilgisini doğrudan etkileyecektir.</p>
+
+					<div class="el">
+						<p>Proje Ödülü (₺)</p>
+						<input id="invite-input" type="text" placeholder="Proje ödülü">
+					</div>
+					<div class="el">
+						<p>Proje Teslim Tarihi</p>
+						<input type="text" name="birthday" value="" />
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="submit-btn">
+				<button type="submit">GÖNDER</button>
+			</div>
+
+			<div class="asd" style="width: 100%;
+		height: 100%;margin-bottom: 150px;"></div>
+		</form>
+
+		</div>
+
+	</section>
+
+
+
+
+
+	<div id="id03" class="mobile-search-modal">
+		<form class="search-modal">
+			<input type="text" name="" placeholder="Tasarım fikir bulun..">
+			<button><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+
+
+
+	<div class="mobile-cont-filter" id="mobile-cont-filter"> </div>
+
+
+	<div class="mobile-bottom-menu">
+		<ul>
+			<li><a href="tasarim.html"><img src="images/dizayn-ico.svg" alt=""></a></li>
+			<li><a href="profesyoneller.html"><img src="images/profesyoneller-ico.svg" alt=""></a></li>
+			<li><a href="blog.html" class="active-bottom-link"><img src="images/blog-ico.svg" alt=""></a></li>
+			<li><a href="yarisma.html"><img src="images/yarisma-ico.svg" alt=""></a></li>
+			<li><a href="profil.html"><i class="fa fa-user-circle"></i></a></li>
+		</ul>
+	</div>
+
+
+
+
+	<!-- giriş yap formu -->
+	<div id="id01" class="modal">
+		<form class="modal-content animate" action="" method="post">
+			<div class="container">
+				<h3>Hoşgeldiniz</h3>
+				<p>Devam etmek için lütfen giriş yapın.</p>
+				<input type="mail" name="" placeholder="E-posta">
+				<input type="password" name="" placeholder="Şifre">
+				<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+				<p class="or">Veya</p>
+
+				<a class="facebook-login" href="yarisma-ekleme.html#!"><i
+						class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+				<a class="google-login" href="yarisma-ekleme.html#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google
+					ile devam et</a>
+				<button type="submit">Giriş Yap</button>
+
+				<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+			</div>
+		</form>
+	</div>
+
+	<!-- kayıt ol formu -->
+	<div id="id02" class="modal2">
+		<form class="modal-content animate modal-kayit" action="" method="post">
+			<div class="container">
+				<h3>Kayıt Ol</h3>
+				<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+				<div class="register-radios">
+					<label class="container-check">Tasarımcıyım
+						<input type="checkbox">
+						<span class="checkmark-check"></span>
+					</label>
+					<label class="container-check">Tasarımcı Arıyorum
+						<input type="checkbox">
+						<span class="checkmark-check"></span>
+					</label>
+				</div>
+				<input type="mail" name="" placeholder="E-posta">
+				<input type="password" name="" placeholder="Şifre">
+				<label class="login-container">
+					Haber bülteni ve yenilikler ile ilgili mail almak istiyorum.
+					<input type="checkbox" checked="checked">
+					<span class="login-checkmark"></span>
+				</label>
+				<label class="login-container">
+					Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+					<input type="checkbox">
+					<span class="login-checkmark"></span>
+				</label>
+
+				<p class="or">Veya</p>
+
+				<a class="facebook-login" href="yarisma-ekleme.html#!"><i
+						class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam et</a>
+				<a class="google-login" href="yarisma-ekleme.html#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google
+					ile devam et</a>
+				<button type="submit">Kayıt Ol</button>
+
+				<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+			</div>
+		</form>
+	</div>
+
+	<script>
+		$(function () {
+			$('input[name="birthday"]').daterangepicker({
+				"locale": {
+					"format": "DD/MM/YYYY",
+					"daysOfWeek": [
+						"Pa",
+						"Pt",
+						"Sa",
+						"Ça",
+						"Pe",
+						"Cu",
+						"Ct"
+					],
+					"monthNames": [
+						"Ocak",
+						"Şubat",
+						"Mart",
+						"Nisan",
+						"Mayıs",
+						"Haziran",
+						"Temmuz",
+						"Ağustos",
+						"Eylül",
+						"Ekim",
+						"Kasım",
+						"Aralık"
+					]
+				},
+				singleDatePicker: true,
+				showDropdowns: true,
+				minYear: 1901,
+				maxYear: parseInt(moment().format('YYYY'), 10)
+			}, function (start, end, label) {
+				var years = moment().diff(start, 'years');
+			});
+		});
+	</script>
+
+
+	<script type="text/javascript">
+
+		(function () {
+			'use strict';
+
+			var section = document.querySelectorAll(".scrollspy");
+			var sections = {};
+			var i = 0;
+
+			Array.prototype.forEach.call(section, function (e) {
+				sections[e.id] = e.offsetTop;
+			});
+
+			window.onscroll = function () {
+				var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+				for (i in sections) {
+					if (sections[i] <= (scrollPosition + 400)) {
+						document.querySelector('.active-nav').setAttribute('class', ' ');
+						document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active-nav');
+					}
+				}
+			};
+		})();
+
+
+
+
+
+
+		/* proje ekleme sayfası kategoriler */
+		var proje_tur = document.getElementById('proje-tur');
+		var icmimar_altbaslik = document.getElementById('ic-mimari');
+		var mimari_altbaslik = document.getElementById('mimari');
+		var peyzaj_altbaslik = document.getElementById('peyzaj');
+		var endustriyel_altbaslik = document.getElementById('endustriyel');
+
+		proje_tur.addEventListener("change", function () {
+			if (this.selectedIndex == 1) {
+				icmimar_altbaslik.style.display = "block";
+				mimari.style.display = "none";
+				peyzaj_altbaslik.style.display = "none";
+				endustriyel_altbaslik.style.display = "none";
+				console.log(this);
+			} else if (this.selectedIndex == 0) {
+				peyzaj_altbaslik.style.display = "none";
+				endustriyel_altbaslik.style.display = "none";
+				icmimar_altbaslik.style.display = "none";
+				mimari.style.display = "block";
+			} else if (this.selectedIndex == 2) {
+				peyzaj_altbaslik.style.display = "block";
+				endustriyel_altbaslik.style.display = "none";
+				icmimar_altbaslik.style.display = "none";
+				mimari.style.display = "none";
+			} else if (this.selectedIndex == 3) {
+				peyzaj_altbaslik.style.display = "none";
+				endustriyel_altbaslik.style.display = "block";
+				icmimar_altbaslik.style.display = "none";
+				mimari.style.display = "none";
+			}
+
+
+		});
+
+
+
+
+
+		var map;
+
+		function initMap() {
+
+			// Create map
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: { lat: 30.266666, lng: -97.733330 },
+				zoom: 8
+			});
+
+			// Reset the value of the search box
+			document.getElementById('search').value = '';
+
+			var input = document.getElementById('search');
+
+			// Create new searchbox constructor
+			var searchName = new google.maps.places.SearchBox(input);
+
+			// Set search to stay within bounds first
+			map.addListener('bounds_changed', function () {
+				searchName.setBounds(map.getBounds());
+			})
+
+			// Array to hold search options
+			var markers = [];
+
+			// When user selects prediction from list
+			searchName.addListener('places_changed', function () {
+
+				// Var to get places
+				var places = searchName.getPlaces();
+
+				// If no places then just return (do nothing)
+				if (places.length === 0) {
+					return;
+				}
+
+				// Clear previous markers
+				markers.forEach(function (m) { m.setMap(null); });
+
+				// Reset markers array
+				markers = [];
+
+				// bounds object
+				var bounds = new google.maps.LatLngBounds();
+
+				places.forEach(function (p) {
+					// If no data then just return (do nothing)
+					if (!p.geometry) {
+						return;
+					}
+
+					// push marker with data
+					markers.push(new google.maps.Marker({
+						map: map,
+						title: p.title,
+						position: p.geometry.location
+					}));
+					if (p.geometry.viewport) {
+						bounds.union(p.geometry.viewport);
+					} else {
+						bounds.extend(p.geometry.location);
+					}
+				});
+				map.fitBounds(bounds);
+			});
+		}
+
+		initMap();
+
+		$(document).ready(function () {
+			$('.ui.dropdown').dropdown();
+		});
+
+
+	</script>
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXFAxSgXP7b5D25WEtjxkYqoWM2PjxaLg&callback=initMap&libraries=places"
+		async defer></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

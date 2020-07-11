@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dogan Hazar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<link rel="stylesheet" type="text/css" href="css/kesfedin.css">
+	<link rel="stylesheet" type="text/css" href="css/tasarim.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile-bottom-menu.css">
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.js"></script>
+
+	<script src="https://unpkg.com/colcade@0/colcade.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/searchbox.css">
+	<script src="./js/searchbox.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+	<header>
+		<div onclick="openMobileMenu()" class="hamburger-menu d-none">
+			<button><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="logo">
+			<h1><a href="index.html">dizay<span>n</span>et</a></h1>
+		</div>
+
+		<div class="mobile-search">
+			<button class="btn btn-link search-btn"><i class="fa fa-search"></i></button>
+		</div>
+		<div class="search-bar">
+			<button><i class="fa fa-search"></i></button>
+			<input type="text" name="" class="input-text" placeholder="Eviniz için tasarım fikirleri bulun...">
+			<div class="search-list">
+				<div class="item">
+					<img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+					<a href="#ahah" class="item-text">
+						Abs..
+					</a>
+				</div>
+				<div class="item">
+					<img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+					<a href="#ahah" class="item-text">
+						abc
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="search-box">
+			<div class="search-box-input">
+				<i class="fa fa-search  search-icon-checked"></i>
+				<input type="text" name="input-text-mobile" class="input-text-mobile" placeholder="Ara..." />
+				<button class="close-btn btn btn-link" onclick="">
+					<img class="icon" src="./icons/close.svg" alt="search-icon" />
+				</button>
+			</div>
+			<div class="search-list">
+				<div class="item">
+					<img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+					<a class="item-link" href="#">
+						Abs..
+					</a>
+				</div>
+				<div class="item">
+					<img src="./icons/book-dark.svg" class="item-icon" alt="icon" />
+					<a class="item-link" href="#">
+						Abs..
+					</a>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<a href="tasarim.html">Dizayn</a>
+			<a href="profesyoneller.html">Profesyoneller</a>
+			<a href="yarisma.html">Yarışmalar</a>
+			<a href="blog.html">Blog</a>
+		</nav>
+		<div class="login-btn">
+			<a onclick="openLogin()">Giriş Yap</a>
+		</div>
+
+	</header>
+
+
+	<form action="" method="POST">
+		<div class="filters">
+			<div class="filter-tools">
+				<button type="button" onclick="mobileFilterAll()" class="filter-button-primary"><i class="fa fa-sliders-h"></i>
+					Filtreler</button>
+			</div>
+
+			<div class="filter-tools">
+				<button type="button" onclick="openSelfTur()" class="filter-button">Tür <span><i class="fa fa-sort-down"
+							style="margin-top:-5px;"></i></span></button>
+				<div class="filter-pop">
+					<div class="results">
+						<label class="container-desk-check" onclick="alanMimariGoster()">
+							<input type="checkbox">
+							<span class="checkmark-desk" style="display: block !important;"></span>
+							<p>Mimari</p>
+						</label>
+						<label class="container-desk-check" onclick="alanIcMimariGoster()">
+							<input type="checkbox" id="ic-mimari-desk">
+							<span class="checkmark-desk" style="display: block !important;"></span>
+							<p>İç Mimari</p>
+						</label>
+						<label class="container-desk-check" onclick="alanPeyzajGoster()">
+							<input type="checkbox" id="peyzaj-desk">
+							<span class="checkmark-desk" style="display: block !important;"></span>
+							<p>Peyzaj</p>
+						</label>
+						<label class="container-desk-check" onclick="alanEndustriGoster()">
+							<input type="checkbox" id="endustri-desk">
+							<span class="checkmark-desk" style="display: block !important;"></span>
+							<p>Endüstriyel Tasarım</p>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="filter-tools">
+				<button type="button" onclick="openSelfOdalar()" class="filter-button">Alanlar <span><i class="fa fa-sort-down"
+							style="margin-top:-5px;"></i></span></button>
+				<div class="filter-pop">
+					<p id="alert-p-desk">Önce Tür Seçmelisiniz!</p>
+					<div class="results" id="result-mimari-desk">
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>mimari</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>mimari</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>mimari</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>mimari</p>
+						</label>
+					</div>
+					<div class="results" id="result-icmimari-desk">
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>salon</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>yatak odası</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>banyo</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>mutfak</p>
+						</label>
+					</div>
+					<div class="results" id="result-peyzaj-desk">
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>bahçe</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>kampüs</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>park</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>bahçe</p>
+						</label>
+					</div>
+					<div class="results" id="result-endustri-desk">
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>endustri</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>endustri</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>endustri</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>endustri</p>
+						</label>
+					</div>
+
+				</div>
+			</div>
+			<div class="filter-tools">
+				<button type="button" onclick="openSelfStiller()" class="filter-button">Stil <span><i class="fa fa-sort-down"
+							style="margin-top:-5px;"></i></span></button>
+				<div class="filter-pop">
+					<div class="results">
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Modern</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Geleneksel</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Minimal</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Rustik</p>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="filter-tools">
+				<button type="button" style="width: 105px;" onclick="openSelfMalzeme()" class="filter-button">Malzeme <span><i
+							class="fa fa-sort-down" style="margin-top:-5px;"></i></span></button>
+				<div class="filter-pop">
+					<div class="results">
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Ahşap</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Taş</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Beton</p>
+						</label>
+						<label class="container-desk-check">
+							<input type="checkbox">
+							<span class="checkmark-desk"></span>
+							<p>Metal</p>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="filter-tools konum">
+				<button type="button" onclick="openSelfKonum()" class="filter-button">Konum <span><i class="fa fa-sort-down"
+							style="margin-top:-5px;"></i><span></button>
+				<div class="filter-pop">
+					<label>
+						<input type="text" name="" placeholder="Şehir adı giriniz">
+					</label>
+
+					<div class="konum-buttons">
+						<a href="">İptal</a>
+						<button class="uygula" type="submit">Filtre Uygula</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+
+	<!-- Seçilen filtreler buraya döndürülecek -->
+	<div class="chosen-filters">
+
+		<div class="chosen-filter">Modern <a href="kesfedin.html#!"><i class="fa fa-times"></i></a></div>
+
+	</div>
+
+
+
+	<div class="chosen-one">
+		<p>Sırala: <span>En Beğenilen <b><i class="fa fa-sort-down"></i></b></span></p>
+		<div class="chosen-one-pop">
+			<a href="kesfedin.html#">En Beğenilenler</a>
+			<a href="kesfedin.html#">En Yeniler</a>
+			<a href="kesfedin.html#">Bugün Popüler</a>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="container">
+		<div class="grid">
+			<div class="grid-col grid-col--1">
+
+			</div>
+			<div class="grid-col grid-col--2">
+
+			</div>
+			<div class="grid-col grid-col--3">
+
+			</div>
+			<div class="grid-col grid-col--4">
+
+			</div>
+			<div class="grid-col grid-col--5 mobile-col-del">
+
+			</div>
+			<div class="grid-col grid-col--6 mobile-col-del">
+
+			</div>
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/6.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/1_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/5.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/4.jpg" alt="picture">
+			</div>
+
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/3_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/2_copy.jpg" alt="picture">
+			</div>
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/6.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/1_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/6.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/1_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/5.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/4.jpg" alt="picture">
+			</div>
+
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/3_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/2_copy.jpg" alt="picture">
+			</div>
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/6.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/1_copy.jpg" alt="picture">
+			</div>
+
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/6.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/1_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/5.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/4.jpg" alt="picture">
+			</div>
+
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/3_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/2_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/6.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/1_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/5.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/4.jpg" alt="picture">
+			</div>
+
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/3_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/2_copy.jpg" alt="picture">
+			</div>
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/5.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/4.jpg" alt="picture">
+			</div>
+
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/3_copy.jpg" alt="picture">
+			</div>
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/2_copy.jpg" alt="picture">
+			</div>
+
+
+			<div class="grid-item">
+				<div class="image-overlay">
+					<button><i class="fa fa-thumbs-up"></i></button>
+					<button><i class="fa fa-plus"></i></button>
+					<button><i class="far fa-paper-plane"></i></button>
+				</div>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/5.jpg" alt="picture">
+			</div>
+
+		</div>
+
+		<div class="loader-icon" id="loader">
+			<div class="loader"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="filter-mobile" id="filter-mobile-black">
+	</div>
+
+	<div class="mobile-filter-content" id="mobile-filter-1">
+		<div class="filter-content-item" id="item-1">
+			<div class="mobile-filter-title">
+				<p>Filtreler</p>
+				<a class="bitti-a" href="kesfedin.html#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openTur()">
+				<p>Tür</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openOdalar()">
+				<p>Alanlar</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openStiller()">
+				<p>Stil</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openMalzeme()">
+				<p>Malzeme</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+			<div class="mobile-filter-item-main" onclick="openKonum()">
+				<p>Konum</p>
+				<span><i class="fa fa-chevron-right"></i></span>
+			</div>
+		</div>
+
+		<div class="filter-content-item" id="item-2">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Tür</p>
+				<a class="bitti-a" href="kesfedin.html#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Mimari</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>İç Mimari</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Peyzaj</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Endüstriyel Tasarım</p>
+				</label>
+			</div>
+		</div>
+
+		<div class="filter-content-item" id="item-3">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Alanlar</p>
+				<a class="bitti-a" href="kesfedin.html#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>3 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>2 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 1</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>1 + 0</p>
+				</label>
+			</div>
+		</div>
+
+
+		<div class="filter-content-item" id="item-4">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Stil</p>
+				<a class="bitti-a" href="kesfedin.html#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Modern</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Geleneksel</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Minimal</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Rustik</p>
+				</label>
+			</div>
+		</div>
+
+
+		<div class="filter-content-item" id="item-6">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Malzeme</p>
+				<a class="bitti-a" href="kesfedin.html#">Bitti</a>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Ahşap</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Taş</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Beton</p>
+				</label>
+			</div>
+			<div class="mobile-filter-item">
+				<label class="container-mobil-check">
+					<input type="checkbox">
+					<span class="checkmark-mobil"></span>
+					<p>Metal</p>
+				</label>
+			</div>
+		</div>
+
+
+		<div class="filter-content-item" id="item-5">
+			<div class="mobile-filter-title">
+				<span onclick="backAllFilters()"><i class="fa fa-chevron-left"></i> Filtreler</span>
+				<p>Konum</p>
+				<a class="bitti-a" href="kesfedin.html#">Bitti</a>
+			</div>
+			<div class="konum-mobil">
+				<label>
+					<input type="text" name="" placeholder="Şehir adı giriniz">
+				</label>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="id03" class="mobile-search-modal">
+		<form class="search-modal">
+			<input type="text" name="" placeholder="Tasarım fikir bulun..">
+			<button><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+
+
+
+	<div class="mobile-cont-filter" id="mobile-cont-filter">
+
+	</div>
+
+	<div class="mobile-bottom-menu">
+		<ul>
+			<li><a href="tasarim.html"><img src="images/dizayn-ico.svg" alt=""></a></li>
+			<li><a href="profesyoneller.html"><img src="images/profesyoneller-ico.svg" alt=""></a></li>
+			<li><a href="blog.html" class="active-bottom-link"><img src="images/blog-ico.svg" alt=""></a></li>
+			<li><a href="yarisma.html"><img src="images/yarisma-ico.svg" alt=""></a></li>
+			<li><a href="profil.html"><i class="fa fa-user-circle"></i></a></li>
+		</ul>
+	</div>
+
+
+
+	<!-- giriş yap formu -->
+	<div id="id01" class="modal">
+		<form class="modal-content animate" action="" method="post">
+			<div class="container">
+				<h3>Hoşgeldiniz</h3>
+				<p>Devam etmek için lütfen giriş yapın.</p>
+				<input type="mail" name="" placeholder="E-posta">
+				<input type="password" name="" placeholder="Şifre">
+				<a class="forget-pass" href="sifremi-unuttum.html">Şifremi unuttum</a>
+				<p class="or">Veya</p>
+
+				<a class="facebook-login" href="kesfedin.html#!"><i
+						class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam
+					et</a>
+				<a class="google-login" href="kesfedin.html#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile
+					devam et</a>
+				<button type="submit">Giriş Yap</button>
+
+				<p class="dont-have-acc">Hesabınız yok mu? <a onclick="openRegister()">Kayıt Ol</a></p>
+			</div>
+		</form>
+	</div>
+
+	<!-- kayıt ol formu -->
+	<div id="id02" class="modal2">
+		<form class="modal-content animate modal-kayit" action="" method="post">
+			<div class="container">
+				<h3>Kayıt Ol</h3>
+				<p>Devam etmek için lütfen bilgilerinizi girin.</p>
+
+				<div class="register-radios">
+					<label class="container-check">Tasarımcıyım
+						<input type="checkbox">
+						<span class="checkmark-check"></span>
+					</label>
+					<label class="container-check">Tasarımcı Arıyorum
+						<input type="checkbox">
+						<span class="checkmark-check"></span>
+					</label>
+				</div>
+				<input type="mail" name="" placeholder="E-posta">
+				<input type="password" name="" placeholder="Şifre">
+				<label class="login-container">
+					Haber bülteni ve yenilikler ile ilgili mail almak istiyorum.
+					<input type="checkbox" checked="checked">
+					<span class="login-checkmark"></span>
+				</label>
+				<label class="login-container">
+					Hüküm&Koşullar ve Gizlilik Politikasını kabul ediyorum.
+					<input type="checkbox">
+					<span class="login-checkmark"></span>
+				</label>
+
+				<p class="or">Veya</p>
+
+				<a class="facebook-login" href="kesfedin.html#!"><i
+						class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;Facebook ile devam
+					et</a>
+				<a class="google-login" href="kesfedin.html#!"><img src="images/google-icon.png">&nbsp;&nbsp;&nbsp;Google ile
+					devam et</a>
+				<button type="submit">Kayıt Ol</button>
+
+				<p class="dont-have-acc">Hesabınız var mı? <a onclick="openLogin()">Giriş Yap</a></p>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+
+		var colc = new Colcade('.grid', {
+			columns: '.grid-col',
+			items: '.grid-item'
+		});
+
+		/* ******************************** */
+
+
+
+
+		$(window).scroll(function () {
+			if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+				$('.loader-icon').css("display", "flex")
+				$('.grid .grid-item:last').attr("id");
+				$.ajax({
+					type: "post",
+					url: "ajax.php",
+					data: { "id": id },
+					success: function (veri) {
+						$('.grid').append(veri)
+						$('.loader-icon').css("display", "none")
+					}
+				})
+			}
+		});
+
+
+
+
+
+	</script>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/mobile-filter.js"></script>
+
+</body>
+
+</html>
