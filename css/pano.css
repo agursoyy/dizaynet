@@ -1,5 +1,3 @@
-
-
 .card-container-pano {
 	flex: 1;
 	height: auto;
@@ -47,52 +45,6 @@
 
 
 
-.card-container-pano .card-pano .card-img-overlay-pano {
-	width: 100%;
-	height: 50%;
-	position: absolute;
-	top: 0;
-	z-index: 999;
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.76) 0%, rgba(125,185,232,0) 100%);
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	padding: 10px;
-	border-radius: 10px 10px 0 0;
-	padding-left: 26px;
-	padding-top: 16px;
-}
-/*
-.card-container-pano .card-pano:hover .card-img-overlay-pano {
-	display: flex;
-	padding-left: 26px;
-	padding-top: 16px;
-	}*/
-
-	.card-container-pano .card-pano .card-img-overlay-pano span {
-		font-size: 16px;
-		font-family: 'sofiapro-light';
-		font-weight: bolder;
-		color: #FFF;
-	}
-
-	.card-container-pano .card-pano .card-img-overlay-pano p {
-		font-size: 14px;
-		font-family: 'sofiapro-light';
-		color: #fff;
-	}
-
-	.card-container-pano .card-pano .card-img-overlay-pano p > b {
-		font-size: 16px;
-		font-weight: var(--medium);
-		color: #FFD982;
-	}
-
-
-
 
 
 	@media only screen and (max-width: 550px) {
@@ -134,21 +86,6 @@
 		}
 
 
-		.card-container-pano .card-pano .card-img-pano .card-img-overlay-pano {
-			width: calc(100% - 8px);
-			height: 50%;
-			position: absolute;
-			top: 100;
-			background: -moz-linear-gradient(top,  rgba(0,0,0,0.76) 0%, rgba(125,185,232,0) 100%);
-			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
-			background: linear-gradient(to bottom,  rgba(0,0,0,0.76) 0%,rgba(125,185,232,0) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#007db9e8',GradientType=0 );
-			display: none;
-			flex-direction: column;
-			justify-content: flex-start;
-			padding: 10px;
-			border-radius: 10px 10px 0 0;
-		}
 		*/
 
 	}

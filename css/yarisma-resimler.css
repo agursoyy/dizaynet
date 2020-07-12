@@ -1,6 +1,8 @@
 .rating-container{
   padding-top: 14px;
   padding-bottom: 16px;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
 }
 .rating-container .rating-action-btn {
   margin-left: auto;
