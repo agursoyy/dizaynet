@@ -439,10 +439,7 @@ section.profile-container .profile-content .card-container-tasarim {
   flex: 1;
   height: auto;
   margin: 30px 0 10px 35px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
 }
 
 section.profile-container
@@ -490,6 +487,7 @@ section.profile-container
   img {
   width: 50%;
   height: 120px;
+  object-fit: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 }
 section.profile-container

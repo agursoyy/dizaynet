@@ -190,18 +190,33 @@ function openKesfedin() {
 }
 
 
+$('.job-info-text p.less').text($('.job-info-text p.more').text());
+$('.job-info-text p.less').hide();
+
+let letter_count_to_show = 300;  // 300 karakterden fazlasını gizle.
+if ($('.job-info-text p.more').text().length > letter_count_to_show) {
+	console.log('MOREE');
+	$('.job-info-text p.more').hide();
+	$('.job-info-text p.less').show();
+	$('.job-info-text p.less').text($('.job-info-text p.less').text().substring(0, letter_count_to_show));
+}
+else {
+	$('.job-info-text span.more-text-button').hide();
+}
 
 
 /* profil sayfası açılır-kaparnır yazı */
 function openJobInfoText(spanText) {
 	var job_info_text = document.getElementById('job-info-text');
-
-	if (job_info_text.style.height === "auto") {
-		job_info_text.style.height = "75px";
-		spanText.innerText = "DEVAMINI OKU..";
-	} else {
-		job_info_text.style.height = "auto";
+	if ($('.job-info-text p.less').is(':visible')) {
+		$('.job-info-text p.more').show();
+		$('.job-info-text p.less').hide();
 		spanText.innerText = "DAHA AZ GÖSTER..";
+	}
+	else {
+		$('.job-info-text p.more').hide();
+		$('.job-info-text p.less').show();
+		span.innerText = 'DEVAMINI OKU...';
 	}
 }
 
@@ -316,19 +331,30 @@ function moreComments() {
 
 /* Profil sayfası kullanıcı bilgisi yazısı açıp-kapatma*/
 
-var userInfo = document.getElementById('user-info');
-var userInfoP = document.getElementById('user-info-p');
+var user_info_p_all = $('.user-info-p.more');
+var user_info_p_less = $('.user-info-p.less');
 
+user_info_p_less.html(user_info_p_all.html());
+user_info_p_less.hide();
+if (user_info_p_all.text().length > 400) {
+	user_info_p_all.hide();
+	user_info_p_less.show();
+	$('.user-info-p.less .text').text($('.user-info-p.less .text').text().substring(0, 400))
+}
+else {
+	$('.user-info .more-text-button').hide();
+}
 
 function openUserInfo(span) {
-	if (userInfo.style.height === "auto" && userInfoP.style.height === "auto") {
-		userInfo.style.height = "200px";
-		userInfoP.style.height = "140px";
-		span.innerText = "Daha fazla...";
-	} else {
-		userInfo.style.height = "auto";
-		userInfoP.style.height = "auto";
-		span.innerText = "Daha az...";
+	if ($('.user-info-p.less').is(':visible')) {
+		user_info_p_all.show();
+		user_info_p_less.hide();
+		span.innerText = 'Daha az...';
+	}
+	else {
+		user_info_p_all.hide();
+		user_info_p_less.show();
+		span.innerText = 'Daha fazla...';
 	}
 }
 

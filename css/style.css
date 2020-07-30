@@ -1432,7 +1432,8 @@ header .mobile-search button.search-btn {
 .blog-articles {
   max-width: 100%;
   height: auto;
-  margin: 40px auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

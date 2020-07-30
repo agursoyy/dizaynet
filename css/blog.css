@@ -58,11 +58,8 @@
 
 .blog-articles {
     height: auto;
-    margin: 50px auto 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .blog-articles .blog-box {
