@@ -1237,3 +1237,8 @@ section.resimler {
     height: 100%;
   }
 }
+
+
+.comment-wrapper .comment-container .posted-comments .like-wrapper .like-btn .fa-thumbs-up {
+  color: #605e61 !important;
+}

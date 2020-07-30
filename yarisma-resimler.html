@@ -10,17 +10,25 @@
   <link rel="stylesheet" type="text/css" href="css/resimler.css">
   <link rel="stylesheet" type="text/css" href="css/yarisma-resimler.css">
   <link rel="stylesheet" type="text/css" href="css/loading-bar.css">
+  <link rel="stylesheet" type="text/css" href="css/comment.css">
+
+
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
-  <script type="text/javascript" src="./js/loading-bar.js"></script>
-
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css"></script>
+  <script type="text/javascript" src="js/croppie.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/croppie.css" />
+
   <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 </head>
 
@@ -310,83 +318,160 @@
       </div>
 
 
-      <div class="comment-section" id="comment-section">
-        <div class="make-comment">
-          <div class="comment-input">
-            <img src="images/comment.svg">
-            <input type="text" name="" placeholder="Bir yorum bırakın">
-          </div>
-          <button>Gönder</button>
-        </div>
-
-        <div class="last-comments">
-          <p>25 Yorum</p>
-          <div class="comment">
-            <div class="comment-profile">
-              <img src="images/comment.svg">
-              <div class="comment-name">
-                <p>Yusuf Akcesme</p>
-                <span>16 Mart, 2020</span>
+      <div class="comment-wrapper" id="comment-section-wrapper">
+        <div class="comment-container">
+          <div class="posted-comments">
+            <div class="comment">
+              <div class="user">
+                <div class="img-wrapper">
+                  <img src="images/comment.svg" />
+                </div>
+                <div class="comment-user-info">
+                  <div class="name">Alptekin Gursoy</div>
+                  <div class="date">30.07.2020</div>
+                </div>
+              </div>
+              <p class="comment-text">
+                <span class="comment-content more">
+                  <!---comment bu div' in içine eklenecek backend dilinde-->
+                  Crisp Architects did a wonderful job designing and managing our project. Jimmy
+                  and
+                  Arthur were instrumental in understanding our needs and applying that to the
+                  overall
+                  design of the house. The team at Crisp truly understood how Crisp Architects did
+                  a
+                  wonderful job designing and managing our project. Jimmy and Arthur were
+                  instrumental
+                  in understanding our needs and applying that to the overall design of the house.
+                  The
+                  team at Crisp truly understood how
+                  and
+                  Arthur were instrumental in understanding our needs and applying that to the
+                  overall
+                  design of the house. The team at Crisp truly understood how Crisp Architects did
+                  a
+                  wonderful job designing and managing our project. Jimmy and Arthur were
+                  instrumental
+                  in understanding our needs and applying that to the overall design of the house.
+                  The
+                  team at Crisp truly understood how
+                </span>
+                <span class="comment-content less"></span>
+                <span class="read-more-btn">Devamını oku...</span>
+              </p>
+              <div class="like-wrapper">
+                <button class="btn btn-link pl-0 like-btn"><i class="fa fa-thumbs-up"></i>
+                  <span>20</span> <!-- beğeni sayısı backendte buraya eklenecek-->
+                </button>
               </div>
             </div>
-            <div class="comment-content" id="comment-p">
-              <p>Crisp Architects did a wonderful job designing and managing our project. Jimmy and Arthur were
-                instrumental.</p>
-            </div>
-            <div class="like-comment"><button><i class="far fa-thumbs-up"></i> Like</button> <span>3</span></div>
-          </div>
-
-
-          <div class="comment">
-            <div class="comment-profile">
-              <img src="images/comment.svg">
-              <div class="comment-name">
-                <p>Yusuf Akcesme</p>
-                <span>16 Mart, 2020</span>
+            <div class="comment">
+              <div class="user">
+                <div class="img-wrapper">
+                  <img src="images/comment.svg" />
+                </div>
+                <div class="comment-user-info">
+                  <div class="name">Alptekin Gursoy</div>
+                  <div class="date">30.07.2020</div>
+                </div>
+              </div>
+              <p class="comment-text">
+                <span class="comment-content more">
+                  <!---comment bu div' in içine eklenecek backend dilinde-->
+                  Crisp Architects did a wonderful job designing and managing our project. Jimmy
+                  and
+                </span>
+                <span class="comment-content less"></span>
+                <span class="read-more-btn">Devamını oku...</span>
+              </p>
+              <div class="like-wrapper">
+                <button class="btn btn-link pl-0 like-btn"><i class="fa fa-thumbs-up"></i>
+                  <span>20</span> <!-- beğeni sayısı backendte buraya eklenecek-->
+                </button>
               </div>
             </div>
-            <div class="comment-content" id="comment-p">
-              <p>Crisp Architects did a wonderful job designing and managing our project. Jimmy and Arthur were
-                instrumental in understanding our needs and applying that to the overall design of the house.</p>
-            </div>
-            <div class="like-comment"><button><i class="far fa-thumbs-up"></i> Like</button> <span>3</span></div>
-
-          </div>
-
-          <div class="comment">
-            <div class="comment-profile">
-              <img src="images/comment.svg">
-              <div class="comment-name">
-                <p>Yusuf Akcesme</p>
-                <span>16 Mart, 2020</span>
+            <div class="comment">
+              <div class="user">
+                <div class="img-wrapper">
+                  <img src="images/comment.svg" />
+                </div>
+                <div class="comment-user-info">
+                  <div class="name">Alptekin Gursoy</div>
+                  <div class="date">30.07.2020</div>
+                </div>
+              </div>
+              <p class="comment-text">
+                <span class="comment-content more">
+                  <!---comment bu div' in içine eklenecek backend dilinde-->
+                  Crisp Architects did a wonderful job designing and managing our project. Jimmy
+                  and
+                </span>
+                <span class="comment-content less"></span>
+                <span class="read-more-btn">Devamını oku...</span>
+              </p>
+              <div class="like-wrapper">
+                <button class="btn btn-link pl-0 like-btn"><i class="fa fa-thumbs-up"></i>
+                  <span>20</span> <!-- beğeni sayısı backendte buraya eklenecek-->
+                </button>
               </div>
             </div>
-            <div class="comment-content" id="comment-p">
-              <p>Crisp Architects did a wonderful job designing and managing our project. Jimmy and Arthur were
-                instrumental in understanding our needs.</p>
-            </div>
-            <div class="like-comment"><button><i class="far fa-thumbs-up"></i> Like</button> <span>3</span></div>
-          </div>
-
-          <div class="comment">
-            <div class="comment-profile">
-              <img src="images/comment.svg">
-              <div class="comment-name">
-                <p>Yusuf Akcesme</p>
-                <span>16 Mart, 2020</span>
+            <div class="comment">
+              <div class="user">
+                <div class="img-wrapper">
+                  <img src="images/comment.svg" />
+                </div>
+                <div class="comment-user-info">
+                  <div class="name">Alptekin Gursoy</div>
+                  <div class="date">30.07.2020</div>
+                </div>
+              </div>
+              <p class="comment-text">
+                <span class="comment-content more">
+                  <!---comment bu div' in içine eklenecek backend dilinde-->
+                  another comment.as.faskgkasgk
+                </span>
+                <span class="comment-content less"></span>
+                <span class="read-more-btn">Devamını oku...</span>
+              </p>
+              <div class="like-wrapper">
+                <button class="btn btn-link pl-0 like-btn"><i class="fa fa-thumbs-up"></i>
+                  <span>20</span> <!-- beğeni sayısı backendte buraya eklenecek-->
+                </button>
               </div>
             </div>
-            <div class="comment-content" id="comment-p">
-              <p>Crisp Architects did a wonderful job designing and managing our project. Jimmy and Arthur were
-                instrumental in understanding our needs.</p>
+            <div class="comment">
+              <div class="user">
+                <div class="img-wrapper">
+                  <img src="images/comment.svg" />
+                </div>
+                <div class="comment-user-info">
+                  <div class="name">Alptekin Gursoy</div>
+                  <div class="date">30.07.2020</div>
+                </div>
+              </div>
+              <p class="comment-text">
+                <span class="comment-content more">
+                  <!---comment bu div' in içine eklenecek backend dilinde-->
+                  LOREM IPSUMASFMASNFJASGJas
+                </span>
+                <span class="comment-content less"></span>
+                <span class="read-more-btn">Devamını oku...</span>
+              </p>
+              <div class="like-wrapper">
+                <button class="btn btn-link pl-0 like-btn"><i class="fa fa-thumbs-up"></i>
+                  <span>20</span> <!-- beğeni sayısı backendte buraya eklenecek-->
+                </button>
+              </div>
             </div>
-            <div class="like-comment"><button><i class="far fa-thumbs-up"></i> Like</button> <span>3</span></div>
+            <button class="list-more-comment-btn btn btn-link mb-4">Toplam 4 yorum</button>
           </div>
-
-
-
-
-
+          <div class="make-comment">
+            <form method="POST">
+              <textarea class="input-text" name="comment" cols="45" rows="5" aria-required="true" required
+                placeholder="Yorum Ekle..."></textarea>
+              <button type="submit" class="submit-btn">Gönder</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

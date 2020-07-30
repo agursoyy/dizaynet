@@ -195,7 +195,6 @@ $('.job-info-text p.less').hide();
 
 let letter_count_to_show = 300;  // 300 karakterden fazlasını gizle.
 if ($('.job-info-text p.more').text().length > letter_count_to_show) {
-	console.log('MOREE');
 	$('.job-info-text p.more').hide();
 	$('.job-info-text p.less').show();
 	$('.job-info-text p.less').text($('.job-info-text p.less').text().substring(0, letter_count_to_show));
@@ -537,3 +536,81 @@ function rate_post(name, rating) { // name refers to name of the hidden input
 	}
 	//$('#post-rating').hide();
 }
+
+
+
+// new comment section functionality for hiding and showing comment texts.
+
+const child_comments = $("#comment-section-wrapper .posted-comments");
+
+let last_comment_number = 0;
+$("#comment-section-wrapper .posted-comments .comment").each(function (index) {
+	console.log(index + ": " + $(this).text());
+	$(this).addClass(`comment-${index}`);
+	last_comment_number = index;
+});
+
+for (i = 0; i <= last_comment_number; i++) {
+	const comment_text_less = $(`#comment-section-wrapper .comment-${i} .comment-text .comment-content.less`);
+	const comment_text_more = $(`#comment-section-wrapper .comment-${i} .comment-text .comment-content.more`);
+
+	comment_text_less.text(comment_text_more.text());
+	comment_text_less.hide();
+	const read_more_comment_btn = $(`#comment-section-wrapper .comment-${i} .read-more-btn`);
+
+	const comment_letter_count = 600;  // 200 karakterden fazlasını gizle.
+	if (comment_text_more.text().length > comment_letter_count) {
+		comment_text_more.hide();
+		comment_text_less.show();
+		comment_text_less.text(comment_text_less.text().substring(0, comment_letter_count));
+	}
+	else {
+		read_more_comment_btn.hide();
+	}
+	read_more_comment_btn.click(function () {
+		if (comment_text_less.is(':visible')) {
+			comment_text_more.show();
+			comment_text_less.hide();
+			read_more_comment_btn.text("Daha az göster");
+		}
+		else {
+			comment_text_more.hide();
+			comment_text_less.show();
+			read_more_comment_btn.text("Devamını oku...");
+		}
+	})
+
+}
+
+
+/*
+
+*/
+last_comment_number = 0;
+const COMMENT_NUMBER_TO_SHOW = 3; // 3 yorumdan sonrasını gizle.
+$("#comment-section-wrapper .posted-comments .comment").each(function (index) {
+	if (index >= COMMENT_NUMBER_TO_SHOW) {
+		console.log(index);
+		$(this).hide();
+		$('#comment-section-wrapper .posted-comments').addClass('comment-hided');
+	}
+	last_comment_number = index;
+});
+
+$('.list-more-comment-btn').click(function () {
+	if ($('#comment-section-wrapper .posted-comments').hasClass('comment-hided')) {
+		$("#comment-section-wrapper .posted-comments .comment").show();
+		$('#comment-section-wrapper .posted-comments').removeClass('comment-hided');
+	}
+	else {
+		$("#comment-section-wrapper .posted-comments .comment").each(function (index) {
+			if (index >= COMMENT_NUMBER_TO_SHOW) {
+				console.log(index);
+				$(this).hide();
+				$('#comment-section-wrapper .posted-comments').addClass('comment-hided');
+			}
+			last_comment_number = index;
+		});
+	}
+})
+

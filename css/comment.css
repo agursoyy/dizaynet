@@ -1,0 +1,88 @@
+
+.comment-wrapper {
+  background-color: #fff;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 50px 30px;
+  position: relative;
+}
+.comment-wrapper .comment-container{}
+.comment-container .posted-comments .comment:not(:last-child) {
+  margin-bottom: 26px;
+}
+.comment-container .posted-comments .comment .user{
+  display: flex;
+  align-items: center;
+}
+.comment-container .posted-comments .comment .user img {
+  margin-right: 12px;
+}
+.comment-container .posted-comments .comment .user .comment-user-info .name{
+  font-family: "sofiapro-medium";
+  font-size: 15px;
+  color: #595a58;
+}
+.comment-container .posted-comments .comment .user .comment-user-info .date {
+  font-family: "sofiapro-light";
+  color: rgb(167, 164, 164);
+  font-size: 14px;
+
+}
+.comment-container .posted-comments .comment .comment-text {
+  margin-top: 20px;
+  font-family: "sofiapro";
+  font-size: 15px;
+  color: #363732;
+}
+.comment-container .posted-comments .comment .like-wrapper {
+  margin-top: 9px;
+}
+.comment-container .posted-comments .comment .like-wrapper .like-btn {
+  padding-left: 0;
+  padding-right: 0;
+  color: #363732;
+  text-decoration: none;
+}
+.comment-container .posted-comments .comment .like-wrapper .like-btn span {
+  margin-left: 3px;
+}
+.comment-container .posted-comments .comment .read-more-btn {
+  font-family: "sofiapro-medium";
+  font-size: 14.4px;
+  color: #080707;
+  cursor: pointer;
+}
+.comment-container .posted-comments .list-more-comment-btn {
+  margin-top: 10px;
+  padding-left: 0;
+  color: #222222;
+  font-family: "sofiapro-medium";
+  font-size: 16px;
+  text-decoration: underline;
+}
+.comment-container .make-comment .star-rate .fa-star {
+  font-size: 15px !important;
+}
+.comment-container .make-comment form textarea.input-text {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #5d5d5d;
+  padding: 8px 10px 9px;
+  color: #2a2a2a;
+  font-family: "sofiapro";
+}
+.comment-container .make-comment form button.submit-btn {
+  margin-top: 16px;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: 1.5px solid #aa7c13;
+  color: #aa7c13;
+  font-family: "sofiapro";
+  font-size: 17px;
+  background-color: #fff;
+}
+.comment-container .make-comment form button.submit-btn:hover {
+  background-color: #aa7c13;
+  color:  #fff;
+}
