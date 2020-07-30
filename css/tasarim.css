@@ -546,12 +546,9 @@ section.design-cate {
 
 
 section.design-cate .cate-carousel {
-	display: flex;
 	width: 93%;
 	margin: 0 auto;
 	height: 100%;
-	align-items: center;
-	justify-content: center;
 }
 
 section.design-cate .cate-carousel .cate-item {
@@ -564,7 +561,6 @@ section.design-cate .cate-carousel .cate-item {
 	flex-direction: column;
 	position: relative;
 }
-
 
 section.design-cate .cate-carousel .cate-item a.item-box {
 	max-width: 110px;
@@ -683,6 +679,7 @@ section.design-cate .cate-carousel .professional-item-cate .professional-stars .
 	font-size: 11px;
 	color:  #5A5A5A;
 }
+
 @media only screen and (max-width: 550px) {
 	section.design-cate .cate-carousel .professional-item-cate  .professional-name {
 		font-size: 12.2px !important;
@@ -708,6 +705,11 @@ section.design-cate .cate-carousel .professional-item-cate .professional-stars .
 		display: none;
 	}
 
+}
+@media only screen and (max-width: 360px) {
+	section.design-cate .cate-carousel  .professional-item-cate .professional-img {
+		width: 40px;
+	}
 }
 @media only screen and (min-width: 550px) and (max-width: 1050px) {
 	section.design-cate .cate-carousel  .professional-item-cate .professional-img {
