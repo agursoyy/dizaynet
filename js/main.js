@@ -438,8 +438,10 @@ const openDrawingBox = () => {
 }
 
 
-$('.ui.dropdown')
-	.dropdown();
+
+$(document).ready(function () {
+	$('.ui.dropdown').dropdown();
+});
 
 
 function handle_mobile_auth_screen() {
@@ -543,6 +545,7 @@ function rate_post(name, rating) { // name refers to name of the hidden input
 
 const child_comments = $("#comment-section-wrapper .posted-comments");
 
+console.log('ALP');
 let last_comment_number = 0;
 $("#comment-section-wrapper .posted-comments .comment").each(function (index) {
 	console.log(index + ": " + $(this).text());
