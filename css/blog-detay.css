@@ -209,12 +209,12 @@ aside .top-articles .lil-post .lil-post-text a.lil-title {
 
 article .comment-section {
     width: 100%;
-    height: 650px;
     background-color: #fff;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, .16);
     border-radius: 5px;
     margin-top: 50px;
     padding: 50px 30px;
+    padding-bottom: 15px;
     overflow: hidden;
     position: relative;
 }
@@ -224,6 +224,15 @@ article .comment-section .make-comment {
     display: flex;
     margin-bottom: 30px;
     flex-direction: column;
+}
+article .comment-section .list-more-comment-btn {
+    color: #222;
+    margin-top: 10px;
+    padding-left: 0;
+    color: #222222;
+    font-family: "sofiapro-medium";
+    font-size: 16px;
+    text-decoration: underline;
 }
 
 article .comment-section .make-comment button {
@@ -281,6 +290,13 @@ article .comment-section .last-comments .comment {
     border-bottom: 1px solid #BBBCB7;
 }
 
+ .comment-section .last-comments .comment .read-more-btn {
+    font-family: "sofiapro-medium";
+    font-size: 14.4px;
+    color: #080707;
+    cursor: pointer;
+}
+
 article .comment-section .last-comments .comment:last-child {
     border-bottom: none;
 }
@@ -316,7 +332,6 @@ article .comment-section .last-comments .comment .comment-profile .comment-name 
 }
 
 article .comment-section .last-comments .comment .comment-content {
-    height: 44px;
     overflow: hidden;
 }
 
