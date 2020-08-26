@@ -1337,7 +1337,6 @@ section.design-cate .cate-carousel .professional-item-cate .professional-stars .
 		width: 100%;
 		height: auto;
 		margin: 30px auto;
-		display: flex;
 		align-items: center;
 		justify-content: space-around;
 		flex-wrap: wrap;
